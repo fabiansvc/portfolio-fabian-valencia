@@ -1,15 +1,15 @@
 {
-  "name": "portfolio",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "portfolio-fabian-valencia",
+  "version": "0.0.2",
+  "description": "Portfolio - Fabian Valencia",
+  "main": "index.jsx",
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "vercel --prod"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Portfolio"],
+  "author": "Fabian Stiven Valencia Cordoba",
   "license": "ISC",
   "dependencies": {
     "@react-three/drei": "^9.80.9",
