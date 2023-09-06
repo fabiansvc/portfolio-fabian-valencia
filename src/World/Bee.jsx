@@ -5,7 +5,6 @@ const Bee = () => {
     const beeRef = useRef();
     const beeModel = useGLTF("/assets/models/bee/scene.gltf")
     const {animations} = beeModel;
-
     const {actions} = useAnimations(animations, beeRef)
 
     useEffect(()=>{

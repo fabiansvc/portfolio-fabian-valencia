@@ -20,8 +20,8 @@ export function WoodenFence(props) {
       <mesh
         geometry={nodes.WoodenFence.geometry}
       >
-        <meshStandardMaterial {...propsTexture}/>
-        </mesh>
+        <meshStandardMaterial {...propsTexture} />
+      </mesh>
     </group>
   );
 }
