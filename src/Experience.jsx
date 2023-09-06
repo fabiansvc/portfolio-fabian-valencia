@@ -1,38 +1,20 @@
-import { FirstPersonControls, OrbitControls, PointerLockControls } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
-import { useRef } from "react";
+import { OrbitControls } from "@react-three/drei";
+import Bee from "./World/Bee";
+import { Tree } from "./World/Tree";
+import { WoodenFence } from "./World/WoodenFence";
 
 const Experience = () => {
-    const boxRef = useRef();
-    const torusRef = useRef();
-    const sphereRef = useRef();
-
-    useFrame((state, delta)=>{
-        boxRef.current.rotation.x += 1 * delta;
-        torusRef.current.position.y = Math.sin(state.clock.getElapsedTime());
-        torusRef.current.rotation.y = Math.cos(state.clock.getElapsedTime());
-        sphereRef.current.position.x = Math.sin(state.clock.getElapsedTime()) + 5;
-    })
-
     return (
         <>
-            <PointerLockControls />
             <ambientLight intensity={0.5} />
             <directionalLight position={[10, 10, 5]} intensity={2} />
-
-            <mesh ref={boxRef} position={[6, 0, -2]}>
-                <boxGeometry args={[1, 1, 1]} />
-                <meshStandardMaterial color="yellow" />
-            </mesh>
-            
-            <mesh ref={torusRef} position={[-2, 0, -5]} rotation={[-Math.PI / 4, 0, 0]} scale={0.6}>
-                <torusGeometry args={[2, 1, 32, 64]} />
-                <meshStandardMaterial wireframe color="purple" />
-            </mesh>
-
-            <mesh ref={sphereRef} position-z={-10}>
-                <sphereGeometry args={[2, 16, 32]} />
-                <meshToonMaterial color="red" />
+            <OrbitControls makeDefault/>
+            <Bee />
+            <Tree position={[-2, -2, 2]} scale={0.04} />
+            <WoodenFence position={[0, -2, 0]} />
+            <mesh position-y={-2} rotation-x={-Math.PI / 2} >
+                <planeGeometry attach="geometry" args={[12, 12]} />
+                <meshStandardMaterial attach="material" color="green" />
             </mesh>
         </>
     )
