@@ -7,6 +7,7 @@
     align-items: center;
     position: absolute;
     z-index: 1;
+    padding: 0rem 8rem;
 }
 
 .card-info{
@@ -16,6 +17,7 @@
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 1rem rgba(45, 45, 45, 0.1);
+
 }
 
 .name{
