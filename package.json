@@ -8,9 +8,7 @@
     "build": "react-scripts build",
     "deploy": "vercel --prod"
   },
-  "keywords": [
-    "Portfolio"
-  ],
+  "keywords": ["Portfolio"],
   "author": "Fabian Stiven Valencia Cordoba",
   "license": "ISC",
   "dependencies": {
