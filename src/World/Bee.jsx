@@ -1,6 +1,5 @@
-import { useAnimations, useGLTF, useHelper } from "@react-three/drei";
+import { useAnimations, useGLTF } from "@react-three/drei";
 import { useEffect, useRef } from "react";
-import { BoxHelper } from "three";
 
 const Bee = (props) => {
     const beeRef = useRef();
@@ -11,7 +10,6 @@ const Bee = (props) => {
     useEffect(()=>{
         const action = actions["All Animations"]
         action.play()
-        console.log(beeRef.current);
     }, [])
 
     return(

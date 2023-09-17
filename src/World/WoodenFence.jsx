@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 import { useTexture } from "@react-three/drei";
@@ -9,7 +8,6 @@ export function WoodenFence(props) {
 
   const propsTexture = useTexture({
     map: PATH + 'woodColor.jpg',
-    // displacementMap: PATH + 'woodHeight.png',
     normalMap: PATH + 'woodNormal.jpg',
     roughnessMap: PATH + 'woodRoughness.jpg',
     aoMap: PATH + 'woodAO.jpg',
@@ -18,7 +16,6 @@ export function WoodenFence(props) {
   return (
     <group {...props} dispose={null}>
       <mesh
-        
         geometry={nodes.WoodenFence.geometry}
         castShadow
       >
