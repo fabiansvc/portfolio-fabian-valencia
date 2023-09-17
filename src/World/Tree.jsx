@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Tree(props) {
   const { nodes, materials } = useGLTF("/assets/models/tree/tree.glb");
-
 
   return (
     <group {...props} dispose={null}>
