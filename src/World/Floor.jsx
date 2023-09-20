@@ -1,7 +1,7 @@
 import { useTexture } from "@react-three/drei";
 import { RepeatWrapping, Vector2 } from "three";
 
-const Floor = () => {
+const Floor = (props) => {
     const PATH = "/assets/textures/forest/";
 
     const propsTexture = useTexture({
@@ -26,7 +26,7 @@ const Floor = () => {
     propsTexture.map.offset = propsTexture.normalMap.offset = propsTexture.displacementMap.offset = propsTexture.roughnessMap.offset = propsTexture.aoMap.offset = new Vector2(0.5, 0.5);
 
     return (
-        <mesh position-y={-2} rotation-x={-Math.PI / 2} receiveShadow >
+        <mesh {...props} >
             <planeGeometry
                 args={[12, 12, 20, 20]}
             />
