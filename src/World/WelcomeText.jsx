@@ -26,9 +26,9 @@ const WelcomeText = () => {
             position-y={3}
         >
             <Float
-             speed={6} // Animation speed
+             speed={2} // Animation speed
              rotationIntensity={1.5} // XYZ rotation intensity
-             floatIntensity={2} // Up/down float intensity
+             floatIntensity={1.5} // Up/down float intensity
             >
             <Text3D
                 font={"/assets/fonts/Bangers_Regular.json"}

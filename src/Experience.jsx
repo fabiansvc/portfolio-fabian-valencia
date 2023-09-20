@@ -19,7 +19,7 @@ const Experience = () => {
             <Lights />
             <Environments />
             <Suspense fallback={null}>
-                
+                <Bee position={[2, 2, 0]} scale={1.5} />
                 <Tree position={[-2, 0, 2]} scale={0.04} />
                 <WoodenFence position={[-1, 0, 2]} rotation-y={Math.PI / 2} />
                 <WoodenFence position={[1, 0, 2]} rotation-y={-Math.PI / 2} />
