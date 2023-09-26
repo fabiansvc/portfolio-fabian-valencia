@@ -1,7 +1,6 @@
 import { Canvas } from "@react-three/fiber"
-import Experience from "./Experience"
+import Experience from "./World/Experience"
 import Info from "./Info/Info"
-import { Loader } from "@react-three/drei"
 
 const App = () => {
     // Camera settings
@@ -19,7 +18,6 @@ const App = () => {
             >
                 <Experience />
             </Canvas>
-
         </>
     )
 }

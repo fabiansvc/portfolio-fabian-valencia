@@ -1,7 +1,6 @@
 import "./info.css"
 
 const Info = ({ name, biography }) => {
-
     return (
         <div className="container-info">
             <div className="card-info">

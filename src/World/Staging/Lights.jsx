@@ -6,7 +6,7 @@ const Lights = () => {
     const spotLightRef = useRef();
 
     useFrame((state) => {
-        spotLightRef.current.position.x = Math.sin(state.clock.getElapsedTime()) * 1;
+        spotLightRef.current.position.x =  Math.sin(state.clock.getElapsedTime()) * 1;
     })
 
     return (
