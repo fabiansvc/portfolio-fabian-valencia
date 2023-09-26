@@ -1,7 +1,7 @@
 import React from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Tree(props) {
+const Tree = (props) => {
   const { nodes, materials } = useGLTF("/assets/models/tree/tree.glb");
 
   return (
@@ -51,5 +51,6 @@ export function Tree(props) {
     </group>
   );
 }
+export default Tree;
 
 useGLTF.preload("/assets/models/tree/tree.glb");
