@@ -8,12 +8,15 @@
     "build": "react-scripts build",
     "deploy": "vercel --prod"
   },
-  "keywords": ["Portfolio"],
+  "keywords": [
+    "Portfolio"
+  ],
   "author": "Fabian Stiven Valencia Cordoba",
   "license": "ISC",
   "dependencies": {
     "@react-three/drei": "^9.80.9",
     "@react-three/fiber": "^8.13.7",
+    "@react-three/rapier": "^1.1.1",
     "@types/three": "^0.155.1",
     "leva": "^0.9.35",
     "r3f-perf": "^7.1.2",

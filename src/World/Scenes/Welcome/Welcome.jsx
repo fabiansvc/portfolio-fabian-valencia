@@ -1,7 +1,4 @@
 import { Suspense } from "react";
-import Controls from "../../Controls/Controls";
-import Environments from "../../Staging/Environment";
-import Lights from "../../Staging/Lights";
 import WoodenFence from "./Models/WoodenFence";
 import Bee from "./Models/Bee";
 import Tree from "./Models/Tree";
@@ -12,9 +9,7 @@ import WelcomeText from "./Text/WelcomeText";
 const Welcome = () => {
     return (
         <>
-            <Controls />
-            <Lights/>
-            <Environments />
+ 
             <Suspense fallback={null}>
                 <Bee position={[2, 2, 0]} scale={1.5} />
                 <Tree position={[-2, 0, 2]} scale={0.04} />
