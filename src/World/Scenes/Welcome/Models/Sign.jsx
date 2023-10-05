@@ -1,12 +1,17 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
+import { useFrame, useThree } from "@react-three/fiber";
+import { MathUtils } from "three";
 
 const Sign = (props) => {
   const { nodes, materials } = useGLTF("/assets/models/sign/sign.glb");
   const aboutMeRef = useRef();
-
-  const handleSign = (e) => {
-  }
+  const [active, setActive] = useState(false)
+  
+  useFrame((state) => {
+    state.camera.position.x = MathUtils.lerp(state.camera.position.x, active ? 15 : 0, 0.1)
+    state.camera.position.z = MathUtils.lerp(state.camera.position.z, active ? -6 : 5, 0.1)
+  })
 
   return (
     <group {...props} dispose={null}>
@@ -24,7 +29,7 @@ const Sign = (props) => {
           receiveShadow
           geometry={nodes.AboutMe.geometry}
           material={materials.green}
-          onClick={(e) => { handleSign(e) }}
+          onClick={() => { setActive(!active) }}
         />
         <mesh
           castShadow

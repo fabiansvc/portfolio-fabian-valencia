@@ -1,4 +1,5 @@
 import { useTexture } from "@react-three/drei";
+import { RigidBody } from "@react-three/rapier";
 import { RepeatWrapping, Vector2 } from "three";
 
 const Floor = (props) => {
@@ -12,7 +13,7 @@ const Floor = (props) => {
         aoMap: PATH + 'forestAO.jpg',
     })
 
-    const repeat = new Vector2(8, 8);
+    const repeat = new Vector2(64, 64);
 
     for (const map of [propsTexture.map, propsTexture.normalMap, propsTexture.displacementMap, propsTexture.roughnessMap, propsTexture.aoMap]) {
         map.repeat = repeat
@@ -26,14 +27,17 @@ const Floor = (props) => {
     propsTexture.map.offset = propsTexture.normalMap.offset = propsTexture.displacementMap.offset = propsTexture.roughnessMap.offset = propsTexture.aoMap.offset = new Vector2(0.5, 0.5);
 
     return (
-        <mesh {...props} >
-            <planeGeometry
-                args={[12, 12, 20, 20]}
-            />
-            <meshStandardMaterial
-                {...propsTexture}
-            />
-        </mesh>
+        <RigidBody type="fixed">
+            <mesh {...props} >
+                <planeGeometry
+                    args={[64, 64, 96, 96]}
+                />
+                <meshStandardMaterial
+                    {...propsTexture}
+                />
+            </mesh>
+        </RigidBody>
+
     );
 }
 export default Floor;
