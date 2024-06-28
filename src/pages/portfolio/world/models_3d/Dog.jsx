@@ -1,7 +1,7 @@
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useEffect, useRef } from "react";
 
-export function Dog(props) {
+export default function Dog(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/assets/models_3d/dog.glb");
   const { actions } = useAnimations(animations, group);
@@ -12,7 +12,6 @@ export function Dog(props) {
     return () => {
       actions.Idle.stop();
     };
-    
   }, [actions]);
 
   return (
@@ -21,6 +20,7 @@ export function Dog(props) {
         <group name="Dog">
           <skinnedMesh
             name="Body"
+            castShadow
             geometry={nodes.Body.geometry}
             material={materials.DogMaterial}
             skeleton={nodes.Body.skeleton}
