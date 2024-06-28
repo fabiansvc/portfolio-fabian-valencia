@@ -1,12 +1,18 @@
-import { Center } from "@react-three/drei";
-import { Tree } from "./models/Tree";
-import { Hachi } from "./models/Hachi";
+import { Tree } from "./models_3d/Tree";
+import { Fences } from "./models_3d/Fences";
+import { Floor } from "./models_3d/Floor";
+import { Sign } from "./models_3d/Sign";
+import { Dog } from "./models_3d/Dog";
+import { Fragment } from "react";
 
 export default function World() {
   return (
-    <Center position={[0, 0.5, 0]}>
+    <Fragment>
+      <Floor />
+      <Fences />
       <Tree />
-      <Hachi position={[0.5, 0, 0.5]} />
-    </Center>
+      <Sign />
+      <Dog position-x={1.5} rotation-y={- Math.PI * 0.1} />
+    </Fragment>
   );
 }

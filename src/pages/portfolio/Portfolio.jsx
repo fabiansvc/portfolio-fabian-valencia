@@ -5,10 +5,10 @@ import World from "./world/World";
 
 export default function Portfolio() {
   return (
-    <Canvas shadows camera={{ position: [0, 0, 3.5] }}>
+    <Canvas shadows camera={{ position: [0, 2, 3] }}>
+      <World />
       <Staging />
       <Controls />
-      <World />
     </Canvas>
   );
 }
