@@ -6,8 +6,8 @@ export default function RoutesPortfolio() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route path="/" element={<Portfolio/>} />
-          <Route path="*" element={<PageNotFound/>} />
+        <Route path="/" element={<Portfolio />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
