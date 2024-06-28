@@ -11,4 +11,4 @@ export function Tree(props) {
   )
 }
 
-useGLTF.preload('./assets/models_3d/tree/tree.glb')
+useGLTF.preload('/assets/models_3d/tree/tree.glb')
