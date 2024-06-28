@@ -5,7 +5,7 @@ export default function Tree(props) {
   return (
     <group {...props} dispose={null}>
       <mesh
-
+        castShadow
         geometry={nodes.Tree_1.geometry}
         material={materials.LeafMaterial}
       />
