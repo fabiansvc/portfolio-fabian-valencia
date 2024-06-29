@@ -1,0 +1,12 @@
+.container-back {
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.icon-back {
+    width: 4rem;
+    transition: filter 1s ease;
+}

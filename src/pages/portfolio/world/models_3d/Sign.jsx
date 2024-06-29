@@ -1,6 +1,6 @@
 import { useGLTF } from "@react-three/drei";
-import useSignStore from "../../../../stores/store-sign-selected";
 import { Vector3 } from "three";
+import useSignStore from "../../../../stores/store-sign-selected";
 
 export default function Sign(props) {
   const { nodes, materials } = useGLTF("/assets/models_3d/sign.glb");
