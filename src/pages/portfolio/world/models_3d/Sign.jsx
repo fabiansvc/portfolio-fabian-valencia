@@ -1,7 +1,10 @@
 import { useGLTF } from "@react-three/drei";
+import useSignStore from "../../../../stores/store-sign-selected";
 
-export default function Sign(props) {
+export function Sign(props) {
   const { nodes, materials } = useGLTF("/assets/models_3d/sign.glb");
+  const { setSignSelected } = useSignStore();
+
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -13,6 +16,7 @@ export default function Sign(props) {
         castShadow
         geometry={nodes.ContactMe_1.geometry}
         material={materials.ContactMeMaterial}
+        onClick={() => setSignSelected("CONTACT_ME")}
       />
       <mesh
         castShadow
@@ -23,6 +27,7 @@ export default function Sign(props) {
         castShadow
         geometry={nodes.AboutMe_1.geometry}
         material={materials.TextMaterial}
+        onClick={() => setSignSelected("ABOUT_ME")}
       />
       <mesh
         castShadow
@@ -31,12 +36,13 @@ export default function Sign(props) {
       />
       <mesh
         castShadow
-        receiveShadow
         geometry={nodes.Projects_1.geometry}
         material={materials.TextMaterial}
+        onClick={() => setSignSelected("PROJECTS")}
       />
       <mesh
         castShadow
+        receiveShadow
         geometry={nodes.Projects_2.geometry}
         material={materials.ProjectsMaterial}
       />
@@ -49,6 +55,7 @@ export default function Sign(props) {
         castShadow
         geometry={nodes.Skills_2.geometry}
         material={materials.SkillsMaterial}
+        onClick={() => setSignSelected("SKILLS")}
       />
     </group>
   );
