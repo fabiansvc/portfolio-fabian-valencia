@@ -1,9 +1,8 @@
-// store.js
+import { Vector3 } from "three";
 import { create } from "zustand";
 
-// Creamos el store con Zustand
 const useSignStore = create((set) => ({
-  signSelected: "NONE",
+  signSelected: new Vector3(0, 2, 4),
   setSignSelected: (sign) => set({ signSelected: sign }),
 }));
 
