@@ -17,7 +17,7 @@ export default function World() {
       <Tree />
       <Sign />
       <Welcome position-y={3.25} rotation-x={Math.PI * 0.05}  />
-      <Dog position-x={1.5} rotation-y={-Math.PI * 0.1} />
+      <Dog position={[0.9, 0, 0.5]} rotation-y={-Math.PI * 0.1} scale={0.8} />
       <Camaleon position={[0.08, 2.5, -0.08]} rotation-y={Math.PI * 0.25} />
       <Staging />
       <Controls />
