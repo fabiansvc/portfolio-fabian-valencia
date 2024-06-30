@@ -1,14 +1,13 @@
-import { Canvas } from "@react-three/fiber";
-import Staging from "./staging/Staging";
-import Controls from "./controls/Controls";
+import { Loader } from "@react-three/drei";
+import Menu from "./menu/Menu";
 import World from "./world/World";
+import { Suspense } from "react";
 
 export default function Portfolio() {
   return (
-    <Canvas shadows camera={{ position: [0, 2, 4] }}>
+    <Suspense fallback={<Loader />}>
+      <Menu />
       <World />
-      <Staging />
-      <Controls />
-    </Canvas>
+    </Suspense>
   );
 }

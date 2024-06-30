@@ -6,11 +6,11 @@ import { Color } from "three";
 export default function Camaleon(props) {
   const group = useRef();
   const skinnedMeshRef = useRef();
-  const [targetColor, setTargetColor] = useState(new Color(`hsl(${Math.random() * 360}, 100%, 50%)`));
-
-  const { nodes, materials, animations } = useGLTF(
-    "/assets/models_3d/camaleon.glb"
-  );
+  const [hue, setHue] = useState(240);
+  const [direction, setDirection] = useState(1); 
+  const saturation = '100%';
+  const lightness = '50%';
+  const { nodes, materials, animations } = useGLTF("/assets/models_3d/camaleon.glb");
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -22,16 +22,25 @@ export default function Camaleon(props) {
 
   useFrame((state, delta) => {
     if (skinnedMeshRef.current) {
-      skinnedMeshRef.current.material.color.lerp(targetColor, delta * 0.5);
+      const hueStep = 10 * delta * direction; 
 
-      if (state.clock.getElapsedTime() % 1 < delta) {
-        setTargetColor(new Color(`hsl(${Math.random() * 360}, 100%, 50%)`));
-      }
+      setHue((prevHue) => {
+        let nextHue = prevHue + hueStep;
+
+        if (nextHue >= 360 || nextHue <= 240) {
+          setDirection((prevDirection) => -prevDirection);
+        }
+
+        return nextHue;
+      });
+
+      const newColor = `hsl(${hue}, ${saturation}, ${lightness})`;
+      skinnedMeshRef.current.material.color.set(new Color(newColor));
     }
   });
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props}>
       <group name="Scene">
         <group name="Skeleton">
           <skinnedMesh

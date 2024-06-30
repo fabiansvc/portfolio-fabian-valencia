@@ -1,23 +1,18 @@
 import { useGLTF } from "@react-three/drei";
+import { Vector3 } from "three";
+import useSignStore from "../../../../stores/store-sign-selected";
 
 export default function Sign(props) {
   const { nodes, materials } = useGLTF("/assets/models_3d/sign.glb");
+  const { setSignSelected } = useSignStore();
+
   return (
     <group {...props} dispose={null}>
       <mesh
         castShadow
-        geometry={nodes.Sign.geometry}
-        material={materials.WoodMaterial}
-      />
-      <mesh
-        castShadow
-        geometry={nodes.ContactMe_1.geometry}
-        material={materials.ContactMeMaterial}
-      />
-      <mesh
-        castShadow
-        geometry={nodes.ContactMe_2.geometry}
-        material={materials.TextMaterial}
+        geometry={nodes.AboutMe_2.geometry}
+        material={materials.AboutMeMaterial}
+        onClick={() => setSignSelected(new Vector3(4, 2, -5))}
       />
       <mesh
         castShadow
@@ -26,19 +21,9 @@ export default function Sign(props) {
       />
       <mesh
         castShadow
-        geometry={nodes.AboutMe_2.geometry}
-        material={materials.AboutMeMaterial}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Projects_1.geometry}
-        material={materials.TextMaterial}
-      />
-      <mesh
-        castShadow
-        geometry={nodes.Projects_2.geometry}
-        material={materials.ProjectsMaterial}
+        geometry={nodes.Skills_2.geometry}
+        material={materials.SkillsMaterial}
+        onClick={() => setSignSelected(new Vector3(2, 3, -8))}
       />
       <mesh
         castShadow
@@ -47,8 +32,30 @@ export default function Sign(props) {
       />
       <mesh
         castShadow
-        geometry={nodes.Skills_2.geometry}
-        material={materials.SkillsMaterial}
+        geometry={nodes.Projects_2.geometry}
+        material={materials.ProjectsMaterial}
+        onClick={() => setSignSelected(new Vector3(-3, 3, -6))}
+      />
+      <mesh
+        castShadow
+        geometry={nodes.Projects_1.geometry}
+        material={materials.TextMaterial}
+      />
+      <mesh
+        castShadow
+        geometry={nodes.ContactMe_1.geometry}
+        material={materials.ContactMeMaterial}
+        onClick={() => setSignSelected(new Vector3(-5, 2, -1))}
+      />
+      <mesh
+        castShadow
+        geometry={nodes.ContactMe_2.geometry}
+        material={materials.TextMaterial}
+      />
+      <mesh
+        castShadow
+        geometry={nodes.Sign.geometry}
+        material={materials.WoodMaterial}
       />
     </group>
   );

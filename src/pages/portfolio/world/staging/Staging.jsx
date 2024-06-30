@@ -16,9 +16,8 @@ export default function Staging() {
         shadow-camera-bottom={-100}
         shadow-camera-near={10}
       />
-      <Sky distance={450000} sunPosition={[0, 1, 0]} inclination={0} azimuth={0.25} mieCoefficient={2} rayleigh={1} />
+      <Sky sunPosition={[0, 1, 0]} />
       <BakeShadows />
-      
     </>
   );
 }
