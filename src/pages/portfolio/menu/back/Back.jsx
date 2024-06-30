@@ -1,7 +1,7 @@
 import { Vector3 } from "three";
 import useSignStore from "../../../../stores/store-sign-selected";
 import "./styles-back.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Back() {
   const [hue, setHue] = useState(240); 
@@ -10,9 +10,9 @@ export default function Back() {
   const saturation = '100%'; 
   const lightness = '50%'; 
   const step = 0.5; 
+  const directionRef = useRef(1); 
 
   useEffect(() => {
-    let direction = 1; 
     let lastUpdate = performance.now();
 
     const updateColor = () => {
@@ -21,13 +21,13 @@ export default function Back() {
 
       if (delta > 50) { 
         setHue((prevHue) => {
-          let newHue = prevHue + direction * step;
+          let newHue = prevHue + directionRef.current * step;
           if (newHue >= 360) {
             newHue = 360;
-            direction = -1; 
+            directionRef.current = -1; 
           } else if (newHue <= 240) {
             newHue = 240;
-            direction = 1; 
+            directionRef.current = 1; 
           }
 
           return newHue;

@@ -45,7 +45,7 @@ export default function Sign(props) {
         castShadow
         geometry={nodes.ContactMe_1.geometry}
         material={materials.ContactMeMaterial}
-        onClick={() => setSignSelected(new Vector3(-5, 2, -1))}
+        onClick={() => setSignSelected(new Vector3(-4, 2, -3))}
       />
       <mesh
         castShadow

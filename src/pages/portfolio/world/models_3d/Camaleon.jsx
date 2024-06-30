@@ -7,7 +7,7 @@ export default function Camaleon(props) {
   const group = useRef();
   const skinnedMeshRef = useRef();
   const [hue, setHue] = useState(240);
-  const [direction, setDirection] = useState(1); 
+  const [direction, setDirection] = useState(1);
   const saturation = '100%';
   const lightness = '50%';
   const { nodes, materials, animations } = useGLTF("/assets/models_3d/camaleon.glb");
@@ -22,13 +22,17 @@ export default function Camaleon(props) {
 
   useFrame((state, delta) => {
     if (skinnedMeshRef.current) {
-      const hueStep = 10 * delta * direction; 
+      const hueStep = 10 * delta * direction;
 
       setHue((prevHue) => {
         let nextHue = prevHue + hueStep;
-
-        if (nextHue >= 360 || nextHue <= 240) {
-          setDirection((prevDirection) => -prevDirection);
+        
+        if (nextHue >= 360) {
+          nextHue = 360;
+          setDirection(-1);
+        } else if (nextHue <= 240) {
+          nextHue = 240;
+          setDirection(1);
         }
 
         return nextHue;
