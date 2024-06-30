@@ -8,8 +8,8 @@ export default function Controls() {
   const orbitControlsRef = useRef();
   const { signSelected } = useSignStore();
 
-  useFrame(({ camera }, delta) => {
-    const step = 1 * delta;
+  useFrame(({ camera }) => {
+    const step = 0.01;
 
     const newPosX = MathUtils.lerp(camera.position.x, signSelected.x, step);
     const newPosY = MathUtils.lerp(camera.position.y, signSelected.y, step);
@@ -22,6 +22,10 @@ export default function Controls() {
     <OrbitControls
       ref={orbitControlsRef}
       target={[0, 1.75, 0]}
+      maxPolarAngle={1.75}
+      enableZoom={false}
+      enablePan={false}
+
     />
   );
 }
