@@ -8,5 +8,12 @@
 
 .icon-back {
     width: 4rem;
-    transition: filter 1s ease;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+
+.icon-back:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
 }

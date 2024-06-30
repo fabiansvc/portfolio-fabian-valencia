@@ -1,21 +1,55 @@
+import { Vector3 } from "three";
+import useSignStore from "../../../../stores/store-sign-selected";
 import "./styles-back.css";
 import { useEffect, useState } from "react";
 
 export default function Back() {
-  const [color, setColor] = useState('#000000');
+  const [hue, setHue] = useState(240); 
+  const { setSignSelected } = useSignStore();
+
+  const saturation = '100%'; 
+  const lightness = '50%'; 
+  const step = 0.5; 
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const randomColor = `#${Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0')}`;
-      setColor(randomColor);
-    }, 1000); 
+    let direction = 1; 
+    let lastUpdate = performance.now();
 
-    return () => clearInterval(interval);
+    const updateColor = () => {
+      const now = performance.now();
+      const delta = now - lastUpdate;
+
+      if (delta > 50) { 
+        setHue((prevHue) => {
+          let newHue = prevHue + direction * step;
+          if (newHue >= 360) {
+            newHue = 360;
+            direction = -1; 
+          } else if (newHue <= 240) {
+            newHue = 240;
+            direction = 1; 
+          }
+
+          return newHue;
+        });
+        lastUpdate = now;
+      }
+
+      requestAnimationFrame(updateColor);
+    };
+
+    requestAnimationFrame(updateColor);
+
+    return () => {
+      cancelAnimationFrame(updateColor);
+    };
   }, []);
+
+  const color = `hsl(${hue}, ${saturation}, ${lightness})`; 
 
   return (
     <div className="container-back">
-      <svg className="icon-back" fill={color} viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+      <svg className="icon-back" fill={color} viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"  onClick={()=>setSignSelected(new Vector3(0, 2, 4))}>
         <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
           <path d="M2954 4891 c-1162 -75 -1091 -66 -1141 -141 -23 -33 -23 -35 -23
           -430 0 -396 0 -397 23 -431 38 -58 76 -69 274 -82 l178 -12 0 -135 0 -135 -40
