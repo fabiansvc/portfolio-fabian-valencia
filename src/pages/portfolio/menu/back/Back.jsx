@@ -1,16 +1,15 @@
 import { Vector3 } from "three";
 import useSignStore from "../../../../stores/store-sign-selected";
 import "./styles-back.css";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 
 export default function Back() {
-  const [hue, setHue] = useState(240); 
+  const [hue, setHue] = useState(240);
   const { setSignSelected } = useSignStore();
-
-  const saturation = '100%'; 
-  const lightness = '50%'; 
-  const step = 0.5; 
-  const directionRef = useRef(1); 
+  const saturation = useMemo(() => "100%", []);
+  const lightness = useMemo(() => "50%", []);
+  const step = useMemo(() => 0.5, []);
+  const directionRef = useRef(1);
 
   useEffect(() => {
     let lastUpdate = performance.now();
@@ -19,15 +18,15 @@ export default function Back() {
       const now = performance.now();
       const delta = now - lastUpdate;
 
-      if (delta > 50) { 
+      if (delta > 50) {
         setHue((prevHue) => {
           let newHue = prevHue + directionRef.current * step;
           if (newHue >= 360) {
             newHue = 360;
-            directionRef.current = -1; 
+            directionRef.current = -1;
           } else if (newHue <= 240) {
             newHue = 240;
-            directionRef.current = 1; 
+            directionRef.current = 1;
           }
 
           return newHue;
@@ -43,15 +42,22 @@ export default function Back() {
     return () => {
       cancelAnimationFrame(updateColor);
     };
-  }, []);
+  }, [step]);
 
-  const color = `hsl(${hue}, ${saturation}, ${lightness})`; 
+  const color = `hsl(${hue}, ${saturation}, ${lightness})`;
 
   return (
     <div className="container-back">
-      <svg className="icon-back" fill={color} viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"  onClick={()=>setSignSelected(new Vector3(0, 2, 4))}>
+      <svg
+        className="icon-back"
+        fill={color}
+        viewBox="0 0 512.000000 512.000000"
+        preserveAspectRatio="xMidYMid meet"
+        onClick={() => setSignSelected(new Vector3(0, 2, 4))}
+      >
         <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
-          <path d="M2954 4891 c-1162 -75 -1091 -66 -1141 -141 -23 -33 -23 -35 -23
+          <path
+            d="M2954 4891 c-1162 -75 -1091 -66 -1141 -141 -23 -33 -23 -35 -23
           -430 0 -396 0 -397 23 -431 38 -58 76 -69 274 -82 l178 -12 0 -135 0 -135 -40
           2 c-22 2 -300 19 -618 38 -576 36 -577 36 -620 17 -67 -31 -679 -507 -699
           -544 -26 -47 -23 -117 5 -159 26 -40 633 -512 693 -540 41 -18 45 -18 655 20
@@ -83,7 +89,8 @@ export default function Back() {
           0 130 0 129 129 0 c122 0 132 1 157 23 35 31 37 77 4 112 -23 24 -28 25 -157
           25 l-133 0 0 135 0 135 26 0 c27 0 375 22 1423 90 322 20 605 38 629 39 42 1
           54 -7 353 -236z m-1721 -791 l85 -7 3 -362 2 -363 -160 0 -160 0 0 374 0 373
-          73 -4 c39 -3 110 -8 157 -11z"/>
+          73 -4 c39 -3 110 -8 157 -11z"
+          />
         </g>
       </svg>
     </div>
