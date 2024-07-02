@@ -2,6 +2,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Tree(props) {
   const { nodes, materials } = useGLTF("/assets/models_3d/tree.glb");
+  
   return (
     <group {...props} dispose={null}>
       <mesh
