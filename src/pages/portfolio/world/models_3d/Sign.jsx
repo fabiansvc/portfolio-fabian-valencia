@@ -5,7 +5,7 @@ import { useCallback } from "react";
 
 export default function Sign(props) {
   const { nodes, materials } = useGLTF("/assets/models_3d/sign.glb");
-  const { setSignSelected } = useSignStore();
+  const { setSign } = useSignStore();
   
   const handlePointerEnter = useCallback(() => {
     document.body.style.cursor = 'pointer';
@@ -15,13 +15,17 @@ export default function Sign(props) {
     document.body.style.cursor = 'auto';
   }, []);
 
+  const handleSignClick = useCallback((name, position) => {
+    setSign({ name, positionCamera: position });
+  }, [setSign]);
+
   return (
     <group {...props} dispose={null}>
       <mesh
         castShadow
         geometry={nodes.AboutMe_2.geometry}
         material={materials.AboutMeMaterial}
-        onClick={() => setSignSelected(new Vector3(4, 2, -5))}
+        onClick={() => handleSignClick('ABOUT_ME', new Vector3(4, 2, -5))}
         onPointerOver={handlePointerEnter}
         onPointerOut={handlePointerLeave}
       />
@@ -34,7 +38,7 @@ export default function Sign(props) {
         castShadow
         geometry={nodes.Skills_2.geometry}
         material={materials.SkillsMaterial}
-        onClick={() => setSignSelected(new Vector3(2, 3, -8))}
+        onClick={() => handleSignClick('SKILLS', new Vector3(2, 3, -8))}
         onPointerOver={handlePointerEnter}
         onPointerOut={handlePointerLeave}
       />
@@ -47,7 +51,7 @@ export default function Sign(props) {
         castShadow
         geometry={nodes.Projects_2.geometry}
         material={materials.ProjectsMaterial}
-        onClick={() => setSignSelected(new Vector3(-3, 3, -6))}
+        onClick={() => handleSignClick('PROJECTS', new Vector3(-3, 3, -6))}
         onPointerOver={handlePointerEnter}
         onPointerOut={handlePointerLeave}
       />
@@ -60,7 +64,7 @@ export default function Sign(props) {
         castShadow
         geometry={nodes.ContactMe_1.geometry}
         material={materials.ContactMeMaterial}
-        onClick={() => setSignSelected(new Vector3(-4, 2, -3))}
+        onClick={() => handleSignClick('CONTACT_ME', new Vector3(-4, 2, -3))}
         onPointerOver={handlePointerEnter}
         onPointerOut={handlePointerLeave}
       />

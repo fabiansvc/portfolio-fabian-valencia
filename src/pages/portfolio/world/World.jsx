@@ -8,19 +8,29 @@ import { Canvas } from "@react-three/fiber";
 import Staging from "./staging/Staging";
 import Controls from "./controls/Controls";
 import Welcome from "./text/Welcome";
+import AboutMe from "../about_me/AboutMe";
+import useSignStore from "../../../stores/store-sign-selected";
+import Skills from "../skills/Skills";
 
 export default function World() {
+  const { sign } = useSignStore();
+
   return (
-    <Canvas shadows camera={{ position: [0, 2, 4] }} >
-      <Floor />
-      <Fences />
-      <Tree />
-      <Sign />
-      <Welcome position-y={3.25} rotation-x={Math.PI * 0.05}  />
-      <Dog position={[0.9, 0, 0.5]} rotation-y={-Math.PI * 0.1} scale={0.8} />
-      <Camaleon position={[0.08, 2.5, -0.08]} rotation-y={Math.PI * 0.25} />
-      <Staging />
-      <Controls />
-    </Canvas>
+    <>
+      <Canvas shadows camera={{ position: [0, 2, 4] }}>
+        <Floor />
+        <Fences />
+        <Tree />
+        <Sign />
+        <Welcome position-y={3.25} rotation-x={Math.PI * 0.05} />
+        <Dog position={[0.9, 0, 0.5]} rotation-y={-Math.PI * 0.1} scale={0.8} />
+        <Camaleon position={[0.08, 2.5, -0.08]} rotation-y={Math.PI * 0.25} />
+        <Staging />
+        <Controls />
+      </Canvas>
+      {sign.name === "ABOUT_ME" && <AboutMe />}
+      {sign.name === "SKILLS" && <Skills />}
+    </>
   );
 }
+
