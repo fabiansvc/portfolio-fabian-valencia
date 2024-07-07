@@ -1,7 +1,12 @@
+/**
+ * Data array containing skills and expertise of the user.
+ * @constant {Object[]} dataSkills
+ */
+
 export const dataSkills = [
   {
     subtitle: `Web 3D Applications Development`,
-    content: `WebGL, ThreeJS & React Three Fiber.`,
+    content: `WebGL, Three.js & React Three Fiber.`,
   },
   {
     subtitle: `Web 2D Applications Development`,

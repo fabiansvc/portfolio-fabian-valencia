@@ -3,16 +3,28 @@ import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 import { Color } from "three";
 
+/**
+ * Camaleon component
+ *
+ * This component renders a 3D chameleon model with animations and color changing effect.
+ *
+ * @component
+ * @param {object} props - The props for the component.
+ * @returns {JSX.Element} The rendered component.
+ */
 export default function Camaleon(props) {
   const group = useRef();
   const skinnedMeshRef = useRef();
   const [hue, setHue] = useState(240);
   const [direction, setDirection] = useState(1);
-  const saturation = '100%';
-  const lightness = '50%';
-  const { nodes, materials, animations } = useGLTF("/assets/models_3d/camaleon.glb");
+  const saturation = "100%";
+  const lightness = "50%";
+  const { nodes, materials, animations } = useGLTF(
+    "/assets/models_3d/camaleon.glb"
+  );
   const { actions } = useAnimations(animations, group);
 
+   // Play idle animation on mount and stop on unmount
   useEffect(() => {
     actions.Idle.play();
     return () => {
@@ -20,13 +32,14 @@ export default function Camaleon(props) {
     };
   }, [actions]);
 
+  // Update hue and color of the chameleon's material based on time
   useFrame((state, delta) => {
     if (skinnedMeshRef.current) {
       const hueStep = 10 * delta * direction;
 
       setHue((prevHue) => {
         let nextHue = prevHue + hueStep;
-        
+
         if (nextHue >= 360) {
           nextHue = 360;
           setDirection(-1);
@@ -43,6 +56,7 @@ export default function Camaleon(props) {
     }
   });
 
+  // Render the 3D model with its components
   return (
     <group ref={group} {...props}>
       <group name="Scene">
@@ -67,4 +81,5 @@ export default function Camaleon(props) {
   );
 }
 
+// Preload the 3D model for optimization
 useGLTF.preload("/assets/models_3d/camaleon.glb");

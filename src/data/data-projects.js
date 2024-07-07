@@ -1,3 +1,8 @@
+/**
+ * Data array containing project information for the user.
+ * @constant {Object[]} dataProjects
+ */
+
 export const dataProjects = [
   {
     subtitle: `EISC Metaverse`,

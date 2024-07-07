@@ -4,26 +4,53 @@ import { useFrame } from "@react-three/fiber";
 import { MathUtils } from "three";
 import useSignStore from "../../../../stores/store-sign-selected";
 
+/**
+ * Controls component
+ *
+ * This component manages camera controls using OrbitControls and updates the camera position
+ * based on the current sign's position stored in the store.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered component.
+ */
 export default function Controls() {
   const orbitControlsRef = useRef();
   const { sign } = useSignStore();
-  const epsilon = useMemo(() => 0.1, []);
+  const epsilon = useMemo(() => 0.001, []);
 
   useFrame(({ camera }, delta) => {
-    const step = 2 * delta;
-
+    // Check if camera is close enough to sign's position, then set it directly
     if (
       Math.abs(camera.position.x - sign.positionCamera.x) < epsilon &&
       Math.abs(camera.position.y - sign.positionCamera.y) < epsilon &&
       Math.abs(camera.position.z - sign.positionCamera.z) < epsilon
     ) {
-      camera.position.set(sign.positionCamera.x, sign.positionCamera.y, sign.positionCamera.z);
+      camera.position.set(
+        sign.positionCamera.x,
+        sign.positionCamera.y,
+        sign.positionCamera.z
+      );
       return;
-    } 
+    }
 
-    const newPosX = MathUtils.lerp(camera.position.x, sign.positionCamera.x, step);
-    const newPosY = MathUtils.lerp(camera.position.y, sign.positionCamera.y, step);
-    const newPosZ = MathUtils.lerp(camera.position.z, sign.positionCamera.z, step);
+    const step = 2 * delta;
+
+    // Interpolate camera position towards sign's position
+    const newPosX = MathUtils.lerp(
+      camera.position.x,
+      sign.positionCamera.x,
+      step
+    );
+    const newPosY = MathUtils.lerp(
+      camera.position.y,
+      sign.positionCamera.y,
+      step
+    );
+    const newPosZ = MathUtils.lerp(
+      camera.position.z,
+      sign.positionCamera.z,
+      step
+    );
 
     camera.position.set(newPosX, newPosY, newPosZ);
   });

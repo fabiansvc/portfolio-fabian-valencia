@@ -1,3 +1,7 @@
+/**
+ * Data array containing information about the user's profile.
+ * @constant {Object[]} dataAboutMe
+ */
 export const dataAboutMe = [
   {
     subtitle: `Hello!`,
