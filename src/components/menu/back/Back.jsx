@@ -1,5 +1,5 @@
 import { Vector3 } from "three";
-import useSignStore from "../../../../stores/store-sign-selected";
+import useSignStore from "../../../stores/store-sign-selected";
 import "./styles-back.css";
 import { useEffect, useState, useRef, useMemo } from "react";
 

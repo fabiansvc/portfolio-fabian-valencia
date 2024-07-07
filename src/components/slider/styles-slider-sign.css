@@ -1,0 +1,64 @@
+.container-slider-sign {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  height: 50%;
+  padding: 4rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(74, 24, 28, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-slider-sign::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  backdrop-filter: blur(2px);
+  z-index: -1;
+  filter: blur(2px);
+  border-radius: inherit;
+}
+
+.slider-sign-title {
+  color: rgb(3, 255, 3);
+  font-size: xx-large;
+  font-weight: 900;
+  text-align: center;
+}
+
+.slider-sign-subtitle {
+  color: rgb(255, 212, 147);
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.slider-sign-content {
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+
+.slick-dots li button:before {
+  color: rgb(255, 255, 255) !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(255, 223, 175) !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(255, 255, 255) !important;
+  font-size: 24px !important;
+  line-height: 0 !important;
+}
+
+.slider-content {
+  text-align: center;
+  padding: 0rem 4rem;
+}
