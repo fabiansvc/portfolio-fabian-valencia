@@ -1,4 +1,4 @@
-import { BakeShadows, Sky } from "@react-three/drei";
+import { BakeShadows, Sky, Stars } from "@react-three/drei";
 
 export default function Staging() {
 
@@ -29,6 +29,7 @@ export default function Staging() {
         rayleigh={3}
         turbidity={0.5}
       />
+      <Stars count={1000} depth={100} speed={1.5}/>
       <BakeShadows />
     </>
   );
