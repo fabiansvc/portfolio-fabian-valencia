@@ -23,8 +23,8 @@ export default function Welcome(props) {
       if (nextHue >= 360) {
         nextHue = 360;
         setDirection(-1);
-      } else if (nextHue <= 290) {
-        nextHue = 290;
+      } else if (nextHue <= 300) {
+        nextHue = 300;
         setDirection(1);
       }
       return nextHue;

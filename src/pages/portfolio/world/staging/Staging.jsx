@@ -7,8 +7,8 @@ export default function Staging() {
       <ambientLight intensity={0.5} />
       <directionalLight
         castShadow
-        position={[10, 10, 15]}
-        intensity={2}
+        position={[-10, 5, -20]}
+        intensity={1}
         shadow-mapSize={[4096, 4096]}
         shadow-camera-far={50}
         shadow-camera-left={-20}
@@ -17,6 +17,8 @@ export default function Staging() {
         shadow-camera-bottom={-100}
         shadow-camera-near={10}
       />
+
+      <directionalLight position={[3, 5, 10]} intensity={2} />
       <Sky
         sunPosition={[-0.5, 0, -1]}
         inclination={0.2}
