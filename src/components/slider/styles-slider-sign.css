@@ -1,7 +1,7 @@
 .container-slider-sign {
   position: absolute;
   z-index: 1;
-  width: 50%;
+  width: 65%;
   height: 50%;
   padding: 4rem;
   top: 50%;
@@ -43,6 +43,16 @@
   font-size: large;
 }
 
+.slider-sign-link{
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+
+.slider-content {
+  text-align: center;
+  padding: 0rem 4rem;
+}
+
 .slick-dots li button:before {
   color: rgb(255, 255, 255) !important;
 }
@@ -58,10 +68,6 @@
   line-height: 0 !important;
 }
 
-.slider-content {
-  text-align: center;
-  padding: 0rem 4rem;
-}
 
 /* Media Queries for responsiveness */
 
@@ -90,6 +96,10 @@
     font-size: medium;
   }
 
+  .slider-sign-link{
+    font-size: medium;
+  }
+
   .slider-content {
     padding: 0rem 1rem;
   }
@@ -110,6 +120,10 @@
   }
 
   .slider-sign-content {
+    font-size: medium;
+  }
+
+  .slider-sign-link{
     font-size: medium;
   }
 
