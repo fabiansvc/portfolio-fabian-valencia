@@ -9,6 +9,17 @@
   transform: translate(-50%, -50%);
   background: rgba(74, 24, 28, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 1; 
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .container-slider-sign::before {
@@ -66,6 +77,21 @@
   color: rgb(255, 255, 255) !important;
   font-size: 24px !important;
   line-height: 0 !important;
+}
+
+.close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: white; 
+}
+
+.close-button:hover {
+  color: rgb(255, 223, 175); 
 }
 
 

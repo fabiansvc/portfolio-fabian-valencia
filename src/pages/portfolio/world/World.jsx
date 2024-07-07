@@ -12,7 +12,15 @@ import AboutMe from "../about_me/AboutMe";
 import useSignStore from "../../../stores/store-sign-selected";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
+import ContactMe from "../contact_me/ContactMe";
 
+/**
+ * World component renders a 3D scene using Three.js and React.
+ * It includes various 3D models, interactive elements, and UI components based on user interaction.
+ *
+ * @component
+ * @returns {JSX.Element}
+ */
 export default function World() {
   const { sign } = useSignStore();
 
@@ -32,7 +40,7 @@ export default function World() {
       {sign.name === "ABOUT_ME" && <AboutMe />}
       {sign.name === "SKILLS" && <Skills />}
       {sign.name === "PROJECTS" && <Projects />}
+      {sign.name === "CONTACT_ME" && <ContactMe />}
     </>
   );
 }
-

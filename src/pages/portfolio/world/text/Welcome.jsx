@@ -3,6 +3,14 @@ import { useMemo, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Color } from "three";
 
+/**
+ * Welcome component renders a 3D text with dynamic color animation and visual effects.
+ *
+ * @component
+ * @param {Object} props - Component props.
+ * @param {Object} props.top - Whether to position the component at the top.
+ * @returns {JSX.Element}
+ */
 export default function Welcome(props) {
   const text = useMemo(
     () => `      Welcome to 
@@ -12,9 +20,15 @@ export default function Welcome(props) {
 
   const [hue, setHue] = useState(290);
   const [direction, setDirection] = useState(1);
-  const saturation = '100%';
-  const lightness = '50%';
+  const saturation = "100%";
+  const lightness = "50%";
 
+  /**
+   * Updates hue value over time to animate color.
+   *
+   * @param {Object} state - Current state.
+   * @param {number} delta - Time delta since last frame.
+   */
   useFrame((state, delta) => {
     const hueStep = 50 * delta;
 
@@ -31,6 +45,11 @@ export default function Welcome(props) {
     });
   });
 
+  /**
+   * Generates a Color object based on current hue, saturation, and lightness.
+   *
+   * @type {Color}
+   */
   const color = useMemo(() => {
     return new Color(`hsl(${hue}, ${saturation}, ${lightness})`);
   }, [hue]);
@@ -46,7 +65,12 @@ export default function Welcome(props) {
           size={0.25}
         >
           {text}
-          <meshPhongMaterial color={color} emissive={0x0006b3} specular={0xffffff} shininess={100}/>
+          <meshPhongMaterial
+            color={color}
+            emissive={0x0006b3}
+            specular={0xffffff}
+            shininess={100}
+          />
         </Text3D>
       </Float>
     </Center>

@@ -1,8 +1,13 @@
 import { Vector3 } from "three";
-import useSignStore from "../../../stores/store-sign-selected";
+import useSignStore from "../../stores/store-sign-selected";
 import "./styles-back.css";
 import { useEffect, useState, useRef, useMemo } from "react";
 
+/**
+ * Back component
+ * @component
+ * @returns {JSX.Element} The component.
+ */
 export default function Back() {
   const [hue, setHue] = useState(240);
   const { setSign } = useSignStore();
@@ -14,6 +19,9 @@ export default function Back() {
   useEffect(() => {
     let lastUpdate = performance.now();
 
+     /**
+     * Updates the color hue periodically.
+     */
     const updateColor = () => {
       const now = performance.now();
       const delta = now - lastUpdate;
