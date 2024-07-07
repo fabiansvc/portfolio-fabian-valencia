@@ -21,6 +21,7 @@ export default function SliderSign({ title, datas }) {
             key={index}
             subtitle={data.subtitle}
             content={data.content}
+            link={data.link ? data.link : ""}
           />
         ))}
       </Slider>

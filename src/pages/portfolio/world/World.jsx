@@ -11,6 +11,7 @@ import Welcome from "./text/Welcome";
 import AboutMe from "../about_me/AboutMe";
 import useSignStore from "../../../stores/store-sign-selected";
 import Skills from "../skills/Skills";
+import Projects from "../projects/Projects";
 
 export default function World() {
   const { sign } = useSignStore();
@@ -30,6 +31,7 @@ export default function World() {
       </Canvas>
       {sign.name === "ABOUT_ME" && <AboutMe />}
       {sign.name === "SKILLS" && <Skills />}
+      {sign.name === "PROJECTS" && <Projects />}
     </>
   );
 }
