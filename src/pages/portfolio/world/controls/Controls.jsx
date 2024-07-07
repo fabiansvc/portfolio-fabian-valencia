@@ -6,14 +6,14 @@ import useSignStore from "../../../../stores/store-sign-selected";
 
 export default function Controls() {
   const orbitControlsRef = useRef();
-  const { signSelected } = useSignStore();
+  const { sign } = useSignStore();
 
   useFrame(({ camera }) => {
     const step = 0.01;
 
-    const newPosX = MathUtils.lerp(camera.position.x, signSelected.x, step);
-    const newPosY = MathUtils.lerp(camera.position.y, signSelected.y, step);
-    const newPosZ = MathUtils.lerp(camera.position.z, signSelected.z, step);
+    const newPosX = MathUtils.lerp(camera.position.x, sign.positionCamera.x, step);
+    const newPosY = MathUtils.lerp(camera.position.y, sign.positionCamera.y, step);
+    const newPosZ = MathUtils.lerp(camera.position.z, sign.positionCamera.z, step);
 
     camera.position.set(newPosX, newPosY, newPosZ);
   });
@@ -25,7 +25,6 @@ export default function Controls() {
       maxPolarAngle={1.75}
       enableZoom={false}
       enablePan={false}
-
     />
   );
 }

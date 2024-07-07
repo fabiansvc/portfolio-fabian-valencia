@@ -1,11 +1,11 @@
 import { Vector3 } from "three";
-import useSignStore from "../../../../stores/store-sign-selected";
+import useSignStore from "../../../stores/store-sign-selected";
 import "./styles-back.css";
 import { useEffect, useState, useRef, useMemo } from "react";
 
 export default function Back() {
   const [hue, setHue] = useState(240);
-  const { setSignSelected } = useSignStore();
+  const { setSign } = useSignStore();
   const saturation = useMemo(() => "100%", []);
   const lightness = useMemo(() => "50%", []);
   const step = useMemo(() => 0.5, []);
@@ -53,7 +53,12 @@ export default function Back() {
         fill={color}
         viewBox="0 0 512.000000 512.000000"
         preserveAspectRatio="xMidYMid meet"
-        onClick={() => setSignSelected(new Vector3(0, 2, 4))}
+        onClick={() =>
+          setSign({
+            name: "NOT_SIGN_SELECTED",
+            positionCamera: new Vector3(0, 2, 4),
+          })
+        }
       >
         <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
           <path
