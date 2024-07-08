@@ -13,7 +13,7 @@ export const dataSkills = [
     content: `HTML5, CSS3, JavaScript, TypeScript.`,
   },
   {
-    subtitle: `Videogames Development`,
+    subtitle: `Video games Development`,
     content: `Unity, C#.`,
   },
   {

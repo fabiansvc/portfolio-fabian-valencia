@@ -5,7 +5,7 @@
 export const dataAboutMe = [
   {
     subtitle: `Hello!`,
-    content: `I am a System Engineer, Professor, Developer, 3D Modeler, UX Designer, Co-director, and Researcher passionate about Web 2D/3D, Metaverse, Extended Reality, prototyping, modeling, and video games.`,
+    content: `I am a System Engineer, Professor, Developer, 3D Modeler, UX Designer, Co-director, and Researcher passionate about Web 2D/3D, Metaverse, Extended Reality, prototyping, 3D modeling, and video games.`,
   },
   {
     subtitle: `Education`,

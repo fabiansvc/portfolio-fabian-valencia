@@ -11,7 +11,7 @@ export const dataProjects = [
   },
   {
     subtitle: `DomoGallery`,
-    content: `The project was developed as a research outcome of the article "DomoGallery: Exploring Technologies to Develop Web 3D," presented at IADIS - CIACA 2023 in Madeira, Portugal.`,
+    content: `The project was developed as a research outcome of the article "DomoGallery: Exploring Technologies to Develop Web 3D", presented at IADIS - CIACA 2023 in Madeira, Portugal.`,
     link: `https://domo-gallery.vercel.app/`,
   },
 ];
