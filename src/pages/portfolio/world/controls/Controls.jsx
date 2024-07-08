@@ -18,7 +18,7 @@ export default function Controls() {
   const { sign } = useSignStore();
   const epsilon = useMemo(() => 0.001, []);
 
-  useFrame(({ camera }, delta) => {
+  useFrame(({ camera }) => {
     // Check if camera is close enough to sign's position, then set it directly
     if (
       Math.abs(camera.position.x - sign.positionCamera.x) < epsilon &&
@@ -33,7 +33,7 @@ export default function Controls() {
       return;
     }
 
-    const step = 2 * delta;
+    const step = 0.02;
 
     // Interpolate camera position towards sign's position
     const newPosX = MathUtils.lerp(
