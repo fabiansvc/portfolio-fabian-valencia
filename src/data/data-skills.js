@@ -21,6 +21,14 @@ export const dataSkills = [
     content: `Blender & Mixamo.`,
   },
   {
+    subtitle: `Desgin, Texturing & Shading`,
+    content: `Substance Designer, Photoshop & Illustrator.`,
+  },
+  {
+    subtitle: `Avatar Creation`,
+    content: `Ready Player Me.`,
+  },
+  {
     subtitle: `Shader Programming`,
     content: `GLSL, HLSL & ShaderGraph.`,
   },
@@ -30,7 +38,7 @@ export const dataSkills = [
   },
   {
     subtitle: `Desktop Applications Development`,
-    content: `JavaFX.`,
+    content: `Java & JavaFX.`,
   },
   {
     subtitle: `User Experience and User Interface Design`,

@@ -14,14 +14,6 @@ export const dataContactMe = [
   },
   {
     subtitle: `Github`,
-    link: `https://github.com/fabiansvc/`,
-  },
-  {
-    subtitle: `Facebook`,
-    link: `https://www.facebook.com/stiven.cordoba.1253/`,
-  },
-  {
-    subtitle: `Instagram`,
-    link: `https://www.instagram.com/fabian_vcordoba/`,
+    link: `https://github.com/fabiansvc`,
   }
 ];
