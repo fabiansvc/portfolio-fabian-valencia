@@ -5,12 +5,12 @@
 
 export const dataContactMe = [
   {
-    subtitle: `Linkedin`,
-    link: `https://www.linkedin.com/in/fabian-valencia-cordoba`,
-  },
-  {
     subtitle: `Email`,
     link: `stiven.vcordoba@gmail.com`,
+  },
+  {
+    subtitle: `Linkedin`,
+    link: `https://www.linkedin.com/in/fabian-valencia-cordoba`,
   },
   {
     subtitle: `Github`,

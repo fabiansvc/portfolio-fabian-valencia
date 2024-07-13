@@ -14,4 +14,9 @@ export const dataProjects = [
     content: `The project was developed as a research outcome of the article "DomoGallery: Exploring Technologies to Develop Web 3D", presented at IADIS - CIACA 2023 in Madeira, Portugal.`,
     link: `https://domo-gallery.vercel.app`,
   },
+  {
+    subtitle: `Portfolio Fabian Valencia`,
+    content: `This portfolio was developed in the Web 3D to showcase my professional profile, projects, and research outcomes.`,
+    link: `https://domo-gallery.vercel.app`,
+  },
 ];

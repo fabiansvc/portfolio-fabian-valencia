@@ -10,42 +10,50 @@ export const dataSkills = [
   },
   {
     subtitle: `Web 2D Applications Development`,
-    content: `HTML5, CSS3, JavaScript, TypeScript.`,
+    content: `HTML, CSS, PHP, JavaScript & TypeScript.`,
+  },
+  {
+    subtitle: `Frameworks, Libraries, Cloud Services & Databases`,
+    content: `React, Node.js, Express, Laravel, Firebase, MongoDB, PostgreSQL, MySQL, WebSockets & WebRTC.`,
+  },
+  {
+    subtitle: `Desktop Applications Development`,
+    content: `Java, JavaFX, FXML & SceneBuilder.`,
   },
   {
     subtitle: `Video games Development`,
-    content: `Unity, C#.`,
+    content: `Unity & C#.`,
   },
   {
     subtitle: `Modeling 3D & Animation`,
     content: `Blender & Mixamo.`,
   },
   {
-    subtitle: `Desgin, Texturing & Shading`,
-    content: `Substance Designer, Photoshop & Illustrator.`,
+    subtitle: `Texturing & Shading`,
+    content: ` Adobe Sustance 3D Painter, Materialize.`,
+  },
+  {
+    subtitle: `Desgin, Prototying`,
+    content: `Photoshop, Illustrator, Figma, Spline, Adobe XD & Balsamiq.`,
   },
   {
     subtitle: `Avatar Creation`,
-    content: `Ready Player Me.`,
+    content: `Ready Player Me & Genie.`,
+  },
+  {
+    subtitle: `Extended Reality Development`,
+    content: `ARCore, Unity & WebXR.`,
   },
   {
     subtitle: `Shader Programming`,
     content: `GLSL, HLSL & ShaderGraph.`,
   },
   {
-    subtitle: `Frameworks and Libraries`,
-    content: `React, NodeJS, Express, Firebase, MongoDB, PostgreSQL, MySQL, WebSockets & WebRTC.`,
-  },
-  {
-    subtitle: `Desktop Applications Development`,
-    content: `Java & JavaFX.`,
-  },
-  {
-    subtitle: `User Experience and User Interface Design`,
+    subtitle: `User Experience (UX) and User Interface (UI) Design`,
     content: `Figma, Adobe XD, Wireframes, Mockups & Prototypes.`,
   },
   {
-    subtitle: `Version Control and Project Management`,
-    content: ` Git, GitHub, Agile methodologies (Scrum, Kanban), Trello, Jira, Miro.`,
+    subtitle: `Version Control, Repositories and Project Management`,
+    content: `Git, GitHub, Agile methodologies (Scrum, Kanban), Trello, Jira, Miro.`,
   },
 ];
