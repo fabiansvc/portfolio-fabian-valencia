@@ -1,0 +1,130 @@
+{
+  "welcome": "  Welcome",
+  "signTitle": [
+    {
+      "aboutMe": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contactMe": "Contact me"
+    }
+  ],
+  "aboutMe": [
+    {
+      "subtitle": "Hello!",
+      "content": "Nice to meet you! I'm Fabian Stiven Valencia."
+    },
+    {
+      "subtitle": "Profession",
+      "content": "I am a Systems Engineer, Professor, Developer, 3D Modeler, UX Designer, and Researcher."
+    },
+    {
+      "subtitle": "Passion",
+      "content": "I'm passionate about Web 2D/3D, Metaverses, Extended Reality (AR, MR, VR), 2D/3D prototyping, 3D modeling, and game development."
+    },
+    {
+      "subtitle": "Education",
+      "content": "I have a degree in Systems Engineering from Universidad del Valle (CO), with a laureate thesis."
+    },
+    {
+      "subtitle": "Education",
+      "content": "I have a degree in Systems Technology from Universidad del Valle (CO)."
+    },
+    {
+      "subtitle": "Experience",
+      "content": "I am currently a Researcher at Universidad del Valle (CO) in the Camaleón Research Group, focusing on Extended Reality (AR, MR, VR), Web 3D, 3D Modeling, and Metaverses."
+    },
+    {
+      "subtitle": "Experience",
+      "content": "I was a part-time professor at Universidad del Valle (CO) in the 2024-1 semester, teaching courses such as Integrative Project I, Video Game Development, Fundamentals of Event-Driven Programming, and Web Applications and Wireless Networks."
+    },
+    {
+      "subtitle": "Experience",
+      "content": "I was a Service Technician at Universidad del Valle (CO) to provide technical support for the specialized training diploma 'Specialized training, good practices in the use of Science, Technology, and Innovation and Technological Transfer'."
+    },
+    {
+      "subtitle": "Experience",
+      "content": "I was a Support Professional in the PMO coordination of the project 'Strengthening business competitiveness through the use of STI as a cross-cutting development tool in the Valle del Cauca department'."
+    }
+  ],
+  "contactMe": [
+    {
+      "subtitle": "Email",
+      "link": "stiven.vcordoba@gmail.com"
+    },
+    {
+      "subtitle": "Linkedin",
+      "link": "https://www.linkedin.com/in/fabian-valencia-cordoba"
+    },
+    {
+      "subtitle": "Github",
+      "link": "https://github.com/fabiansvc"
+    }
+  ],
+  "projects": [
+    {
+      "subtitle": "EISC Metaverse",
+      "content": "It is a metaverse developed for the School of Systems Engineering and Computing at Universidad del Valle, enabling real-time interaction in a Web 3D environment among students, professors, and the community.",
+      "link": "https://eisc-metaverse.vercel.app"
+    },
+    {
+      "subtitle": "DomoGallery",
+      "content": "It is a Web 3D virtual space where visitors can explore a campus aerial view and an art gallery with poetry creations at Universidad del Valle (CO).",
+      "link": "https://domo-gallery.vercel.app"
+    },
+    {
+      "subtitle": "Fabian Valencia Portfolio",
+      "content": "This portfolio was developed in Web 3D to showcase my professional profile, projects, skills, and research outcomes.",
+      "link": "https://portfolio-fabian-valencia.vercel.app"
+    }
+  ],
+  "skills": [
+    {
+      "subtitle": "Web 3D Application Development",
+      "content": "WebGL, Three.js & React Three Fiber."
+    },
+    {
+      "subtitle": "Web 2D Application Development",
+      "content": "HTML, CSS, PHP, JavaScript & TypeScript."
+    },
+    {
+      "subtitle": "Frameworks, Libraries, Cloud Services, and Databases",
+      "content": "React, Node.js, Express, Laravel, Firebase, MongoDB, PostgreSQL, MySQL, WebSockets & WebRTC."
+    },
+    {
+      "subtitle": "Desktop Application Development",
+      "content": "Java, JavaFX, FXML & SceneBuilder."
+    },
+    {
+      "subtitle": "Game Development",
+      "content": "Unity & C#."
+    },
+    {
+      "subtitle": "3D Modeling",
+      "content": "Blender"
+    },
+    {
+      "subtitle": "Texturing and PBR Materials",
+      "content": "Adobe Substance 3D Painter, Materialize."
+    },
+    {
+      "subtitle": "Avatar Creation and Animation",
+      "content": "Ready Player Me & Mixamo"
+    },
+    {
+      "subtitle": "Extended Reality Development (AR, MR, VR)",
+      "content": "ARCore, Unity & WebXR."
+    },
+    {
+      "subtitle": "Shader Programming",
+      "content": "GLSL, HLSL & ShaderGraph."
+    },
+    {
+      "subtitle": "User Experience (UX) and User Interface (UI) Design",
+      "content": "Photoshop, Illustrator, Figma, Spline, Adobe XD & Balsamiq."
+    },
+    {
+      "subtitle": "Version Control, Repositories, and Project Management",
+      "content": "Git, GitHub, Agile methodologies (Scrum, Kanban), Trello, Jira & Miro."
+    }
+  ]
+}

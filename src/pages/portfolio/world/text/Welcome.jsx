@@ -2,6 +2,7 @@ import { Center, Float, Text3D } from "@react-three/drei";
 import { useMemo, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Color } from "three";
+import { useTranslation } from "react-i18next";
 
 /**
  * Welcome component renders a 3D text with dynamic color animation and visual effects.
@@ -12,11 +13,9 @@ import { Color } from "three";
  * @returns {JSX.Element}
  */
 export default function Welcome(props) {
-  const text = useMemo(
-    () => `      Welcome to 
-    Fabian's villa`,
-    []
-  );
+  const { t } = useTranslation();
+
+  const text = useMemo(() => `${t("welcome")}`, [t]);
 
   const [hue, setHue] = useState(290);
   const [direction, setDirection] = useState(1);
@@ -59,7 +58,7 @@ export default function Welcome(props) {
       <Float speed={1} rotationIntensity={0.5} floatIntensity={0.5}>
         <Text3D
           font={"/assets/fonts/Bangers_Regular.json"}
-          height={0.4}
+          height={0.2}
           lineHeight={0.5}
           letterSpacing={0.08}
           size={0.25}

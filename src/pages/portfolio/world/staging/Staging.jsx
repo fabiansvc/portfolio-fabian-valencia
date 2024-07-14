@@ -29,7 +29,7 @@ export default function Staging() {
       />
 
       {/* Additional directional light */}
-      <directionalLight position={[3, 5, 10]} intensity={2} />
+      <directionalLight position={[3, 2, 10]} intensity={2} />
 
       {/* Sky component with customizable parameters */}
       <Sky
