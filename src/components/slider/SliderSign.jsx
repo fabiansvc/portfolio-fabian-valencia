@@ -48,7 +48,7 @@ export default function SliderSign({ title, datas }) {
       >
         X
       </button>
-      <h1 className="slider-sign-title"> {title} </h1>
+      {/* <h1 className="slider-sign-title"> {title} </h1> */}
       <Slider {...settings}>
         {datas.map((data, index) => (
           <SliderContent
@@ -56,6 +56,7 @@ export default function SliderSign({ title, datas }) {
             subtitle={data.subtitle}
             content={data.content ? data.content : ""}
             link={data.link ? data.link : ""}
+            image={data.image ? data.image : ""}
           />
         ))}
       </Slider>

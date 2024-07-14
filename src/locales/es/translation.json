@@ -11,135 +11,165 @@
   "aboutMe": [
     {
       "subtitle": "¡Hola!",
-      "content": "¡Mucho gusto!. Soy Fabian Stiven Valencia."
+      "content": "¡Mucho gusto!, soy Fabian Stiven Valencia Cordoba",
+      "image": "../../../../public/assets/images/about_me/me.png"
     },
     {
       "subtitle": "Profesión",
-      "content": "Soy Ingeniero de Sistemas, Profesor, Desarrollador, Modelador 3D, Diseñador UX e Investigador."
+      "content": "Soy Ingeniero de Sistemas, Profesor, Desarrollador, Modelador 3D, Diseñador UX e Investigador",
+      "image": "../../../../public/assets/images/about_me/profession.png"
     },
     {
       "subtitle": "Pasión",
-      "content": "Estoy apasionado por la Web 2D/3D, Metaversos, Realidad Extendida (AR, MR, VR), prototipos 2D/3D, modelado 3D y desarrollo de videojuegos."
+      "content": "Estoy apasionado por la Web 2D/3D, Metaversos, Realidad Extendida (AR, MR, VR), prototipos 2D/3D, modelado 3D y desarrollo de videojuegos",
+      "image": "../../../../public/assets/images/about_me/passion.png"
     },
     {
       "subtitle": "Educación",
-      "content": "Tengo un grado en Ingeniería de Sistemas de la Universidad del Valle (CO), con mención de tesis laureada."
+      "content": "Tengo un grado en Ingeniería de Sistemas de la Universidad del Valle (CO), con mención de tesis laureada",
+      "image": "../../../../public/assets/images/about_me/education.png"
     },
     {
       "subtitle": "Educación",
-      "content": "Tengo un grado en Tecnología en Sistemas de la Universidad del Valle (CO)."
+      "content": "Tengo un grado en Tecnología en Sistemas de la Universidad del Valle (CO)",
+      "image": "../../../../public/assets/images/about_me/education.png"
     },
     {
       "subtitle": "Experiencia",
-      "content": "Actualmente soy Investigador en la Universidad del Valle (CO) del Grupo de Investigación Camaleón en temas relacionados con Realidad Extendida (AR, MR, VR), Web 3D, Modelado 3D y Metaversos."
+      "content": "Actualmente soy Investigador en la Universidad del Valle (CO) del Grupo de Investigación Camaleón en temas relacionados con Realidad Extendida (AR, MR, VR), Web 3D, Modelado 3D y Metaversos",
+      "image": "../../../../public/assets/images/about_me/researcher.png"
     },
     {
       "subtitle": "Experiencia",
-      "content": "Fui Profesor hora cátedra en la Universidad del Valle (CO) en el semestre 2024-1 de los cursos: Proyecto Integrador I, Desarrollo de Videojuegos, Fundamentos de Programación Orientada a Eventos y Aplicaciones Web y Redes Inalámbricas."
+      "content": "Fui Profesor hora cátedra en la Universidad del Valle (CO) en el semestre 2024-1 de los cursos: Proyecto Integrador I, Desarrollo de Videojuegos, Fundamentos de Programación Orientada a Eventos y Aplicaciones Web y Redes Inalámbricas",
+      "image": "../../../../public/assets/images/about_me/professor.png"
     },
     {
       "subtitle": "Experiencia",
-      "content": "Fui Técnico de Servicio en la Universidad del Valle (CO) para apoyar técnicamente el Diplomado 'Entrenamientos especializados, buenas prácticas en el uso de Ciencia, Tecnología e Innovación y Transferencia Tecnológica'."
+      "content": "Fui Técnico de Servicio en la Universidad del Valle (CO) para apoyar técnicamente el Diplomado 'Entrenamientos especializados, buenas prácticas en el uso de Ciencia, Tecnología e Innovación y Transferencia Tecnológica'",
+      "image": "../../../../public/assets/images/about_me/working.png"
     },
     {
       "subtitle": "Experiencia",
-      "content": "Fui Profesional de apoyo en la coordinación PMO del proyecto 'Fortalecimiento de la competitividad empresarial mediante el uso de la CTeI como herramienta de desarrollo transversal en el departamento del Valle del Cauca'."
-    }
-  ],
-  "contactMe": [
-    {
-      "subtitle": "Correo electrónico",
-      "link": "stiven.vcordoba@gmail.com"
-    },
-    {
-      "subtitle": "Linkedin",
-      "link": "https://www.linkedin.com/in/fabian-valencia-cordoba"
-    },
-    {
-      "subtitle": "Github",
-      "link": "https://github.com/fabiansvc"
+      "content": "Fui Profesional de apoyo en la coordinación PMO del proyecto 'Fortalecimiento de la competitividad empresarial mediante el uso de la CTeI como herramienta de desarrollo transversal en el departamento del Valle del Cauca'",
+      "image": "../../../../public/assets/images/about_me/working.png"
     }
   ],
   "projects": [
     {
       "subtitle": "EISC Metaverse",
-      "content": "Es un metaverso desarrollado para la Escuela de Ingeniería de Sistemas y Computación de la Universidad del Valle, que permite la interacción en tiempo real en un entorno Web 3D entre estudiantes, profesores y comunidad en general.",
-      "link": "https://eisc-metaverse.vercel.app"
+      "content": "Es un metaverso desarrollado para la Escuela de Ingeniería de Sistemas y Computación de la Universidad del Valle, que permite la interacción en tiempo real en un entorno Web 3D entre estudiantes, profesores y comunidad en general",
+      "link": "https://eisc-metaverse.vercel.app",
+      "image": "../../../../public/assets/images/projects/eisc_metaverse.jpg"
     },
     {
       "subtitle": "DomoGallery",
-      "content": "Es un espacio virtual Web 3D en primera persona, donde en un domo se muestra en una vista aérea el campus de la Universidad del Valle (CO) y en una glaeria de arte obras de creación propia de poesía.",
-      "link": "https://domo-gallery.vercel.app"
+      "content": "Es un espacio virtual Web 3D en primera persona, donde en un domo se muestra en una vista aérea el campus de la Universidad del Valle (CO) y en una glaeria de arte obras de creación propia de poesía",
+      "link": "https://domo-gallery.vercel.app",
+      "image": "../../../../public/assets/images/projects/domogallery.jpg"
     },
     {
       "subtitle": "Portfolio Fabian Valencia",
-      "content": "Este portafolio fue desarrollado en la Web 3D para mostrar mi perfil profesional, proyectos, habilidades y resultados de investigación.",
-      "link": "https://portfolio-fabian-valencia.vercel.app"
+      "content": "Este portafolio fue desarrollado en la Web 3D para mostrar mi perfil profesional, proyectos, habilidades y resultados de investigación",
+      "link": "https://portfolio-fabian-valencia.vercel.app",
+      "image": "../../../../public/assets/images/projects/portfolio_fabian_valencia.jpg"
     },
     {
       "subtitle": "Art Gallery",
-      "content": "Esta galería de arte en un espacio virtual Web 3D, la cual fue resultado de investigar cómo desarrollar en Three.js y Cannon.js, integrar un avatar y modelar con Blender utilizando UV Wrapping y Baking.",
-      "link": "https://art-gallery-sooty.vercel.app"
+      "content": "Esta galería de arte en un espacio virtual Web 3D, la cual fue resultado de investigar cómo desarrollar en Three.js y Cannon.js, integrar un avatar y modelar con Blender utilizando UV Wrapping y Baking",
+      "link": "https://art-gallery-sooty.vercel.app",
+      "image": "../../../../public/assets/images/projects/art_gallery.jpg"
     },
     {
       "subtitle": "AR Products",
-      "content": "Prototipo para mostrar productos en realidad aumentada, desarrollado en Unity usando ARCore de Google.",
-      "link": "https://github.com/fabiansvc/ar-products-project"
+      "content": "Prototipo para mostrar productos en realidad aumentada, desarrollado en Unity usando ARCore de Google",
+      "link": "https://github.com/fabiansvc/ar-products-project",
+      "image": "../../../../public/assets/images/projects/ar_products.jpg"
     },
     {
       "subtitle": "AR Machine",
-      "content": "Prototipo de máquina eléctrica para ayudar a los estudiantes de Ingeniería Electrónica a aprender cómo funciona el campo electromagnético. Este proyecto fue desarrollado en Unity usando ARCore de Google.",
-      "link": "https://github.com/rodriguezfer320/Prototipo-Maquina-Electrica"
+      "content": "Prototipo de máquina eléctrica para ayudar a los estudiantes de Ingeniería Electrónica a aprender cómo funciona el campo electromagnético. Este proyecto fue desarrollado en Unity usando ARCore de Google",
+      "link": "https://github.com/rodriguezfer320/Prototipo-Maquina-Electrica",
+      "image": "../../../../public/assets/images/projects/ar_machine.jpg"
     }
   ],
   "skills": [
     {
       "subtitle": "Desarrollo de Aplicaciones Web 3D",
-      "content": "WebGL, Three.js & React Three Fiber."
+      "content": "WebGL, Three.js & React Three Fiber",
+      "image": "../../../../public/assets/images/skills/web3d.png"
     },
     {
-      "subtitle": "Desarrollo de Aplicaciones Web 2D",
-      "content": "HTML, CSS, PHP, JavaScript & TypeScript."
+      "subtitle": "Desarrollo de Aplicaciones Web",
+      "content": "HTML, CSS, JavaScript, PHP & TypeScript",
+      "image": "../../../../public/assets/images/skills/web.png"
     },
     {
-      "subtitle": "Frameworks, Bibliotecas, Servicios en la Nube y Bases de Datos",
-      "content": "React, Node.js, Express, Laravel, Firebase, MongoDB, PostgreSQL, MySQL, WebSockets & WebRTC."
+      "subtitle": "Frameworks, Servicios en la Nube y Bases de Datos",
+      "content": "React, Node.js, Express, Laravel, Firebase, MongoDB, PostgreSQL, MySQL, WebSockets & WebRTC",
+      "image": "../../../../public/assets/images/skills/frameworks.png"
     },
     {
       "subtitle": "Desarrollo de Aplicaciones de Escritorio",
-      "content": "Java, JavaFX, FXML & SceneBuilder."
+      "content": "Java, JavaFX, FXML & SceneBuilder",
+      "image": "../../../../public/assets/images/skills/desktop.png"
     },
     {
       "subtitle": "Desarrollo de Videojuegos",
-      "content": "Unity & C#."
+      "content": "Unity & C#",
+      "image": "../../../../public/assets/images/skills/game_development.png"
     },
     {
       "subtitle": "Modelado 3D",
-      "content": "Blender"
+      "content": "Blender",
+      "image": "../../../../public/assets/images/skills/blender.png"
     },
     {
       "subtitle": "Texturización y materiales PBR",
-      "content": " Adobe Sustance 3D Painter, Materialize."
+      "content": "Adobe Sustance 3D Sampler & Materialize",
+      "image": "../../../../public/assets/images/skills/texturing.png"
     },
     {
       "subtitle": "Creación de Avatares y animación",
-      "content": "Ready Player Me & Mixamo"
+      "content": "Ready Player Me & Mixamo",
+      "image": "../../../../public/assets/images/skills/avatars.png"
     },
     {
       "subtitle": "Desarrollo de Realidad Extendida (AR, MR, VR)",
-      "content": "ARCore, Unity & WebXR."
+      "content": "ARCore, Unity & WebXR",
+      "image": "../../../../public/assets/images/skills/xr.png"
     },
     {
       "subtitle": "Programación de Shaders",
-      "content": "GLSL, HLSL & ShaderGraph."
+      "content": "GLSL, CG, HLSL & ShaderGraph",
+      "image": "../../../../public/assets/images/skills/shader.png"
     },
     {
       "subtitle": "Diseño de Experiencia de Usuario (UX) y de Interfaz de Usuario (UI)",
-      "content": "Photoshop, Illustrator, Figma, Spline, Adobe XD & Balsamiq."
+      "content": "Photoshop, Illustrator, Figma, Spline, Adobe XD & Balsamiq",
+      "image": "../../../../public/assets/images/skills/ux_ui.png"
     },
     {
       "subtitle": "Control de Versiones, Repositorios y Gestión de Proyectos",
-      "content": "Git, GitHub, metodologías ágiles (Scrum, Kanban), Trello, Jira & Miro."
+      "content": "Git, GitHub, metodologías ágiles (Scrum, Kanban), Trello, Jira & Miro",
+      "image": "../../../../public/assets/images/skills/git.png"
+    }
+  ],
+  "contactMe": [
+    {
+      "subtitle": "Correo electrónico",
+      "link": "mailto:fabian.cordoba@correounivalle.edu.co",
+      "image": "../../../../public/assets/images/contact_me/email.png"
+    },
+    {
+      "subtitle": "Linkedin",
+      "link": "https://www.linkedin.com/in/fabian-valencia-cordoba",
+      "image": "../../../../public/assets/images/contact_me/linkedin.png"
+    },
+    {
+      "subtitle": "Github",
+      "link": "https://github.com/fabiansvc",
+      "image": "../../../../public/assets/images/contact_me/github.png"
     }
   ]
 }
