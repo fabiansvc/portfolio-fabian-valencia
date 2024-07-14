@@ -68,13 +68,28 @@
     },
     {
       "subtitle": "DomoGallery",
-      "content": "Es un espacio virtual Web 3D donde se explora en primera persona para mostrar en un domo una vista aérea el campus de la Universidad del Valle (CO) y en una glaeria de arte obras de creación propia de poesía.",
+      "content": "Es un espacio virtual Web 3D en primera persona, donde en un domo se muestra en una vista aérea el campus de la Universidad del Valle (CO) y en una glaeria de arte obras de creación propia de poesía.",
       "link": "https://domo-gallery.vercel.app"
     },
     {
       "subtitle": "Portfolio Fabian Valencia",
       "content": "Este portafolio fue desarrollado en la Web 3D para mostrar mi perfil profesional, proyectos, habilidades y resultados de investigación.",
       "link": "https://portfolio-fabian-valencia.vercel.app"
+    },
+    {
+      "subtitle": "Art Gallery",
+      "content": "Esta galería de arte en un espacio virtual Web 3D, la cual fue resultado de investigar cómo desarrollar en Three.js y Cannon.js, integrar un avatar y modelar con Blender utilizando UV Wrapping y Baking.",
+      "link": "https://art-gallery-sooty.vercel.app"
+    },
+    {
+      "subtitle": "AR Products",
+      "content": "Prototipo para mostrar productos en realidad aumentada, desarrollado en Unity usando ARCore de Google.",
+      "link": "https://github.com/fabiansvc/ar-products-project"
+    },
+    {
+      "subtitle": "AR Machine",
+      "content": "Prototipo de máquina eléctrica para ayudar a los estudiantes de Ingeniería Electrónica a aprender cómo funciona el campo electromagnético. Este proyecto fue desarrollado en Unity usando ARCore de Google.",
+      "link": "https://github.com/rodriguezfer320/Prototipo-Maquina-Electrica"
     }
   ],
   "skills": [
