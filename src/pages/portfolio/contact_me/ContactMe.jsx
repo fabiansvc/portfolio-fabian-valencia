@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import SliderSign from "../../../components/slider/SliderSign";
-import { dataContactMe } from "../../../data/data-contact-me";
+import { useTranslation } from "react-i18next";
 
 /**
  * ContactMe component
@@ -11,7 +11,18 @@ import { dataContactMe } from "../../../data/data-contact-me";
  * @returns {JSX.Element} The rendered component.
  */
 export default function ContactMe() {
-    const datas = useMemo(() => dataContactMe, []);
-  
-    return <SliderSign title={"Contact me"} datas={datas}/>;
+  const { t } = useTranslation();
+
+  const datas = useMemo(() => {
+    const contactMeLength = t("contactMe", { returnObjects: true }).length;
+
+    return Array.from({ length: contactMeLength }, (_, index) => ({
+      subtitle: t(`contactMe.${index}.subtitle`),
+      link: t(`contactMe.${index}.link`),
+    }));
+  }, [t]);
+
+  const title = t("signTitle.0.contactMe");
+
+  return <SliderSign title={title} datas={datas} />;
 }

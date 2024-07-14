@@ -4,16 +4,19 @@
     position: absolute;
     z-index: 1;
     padding: 1rem;
-}
-
-.icon-back {
+  }
+  
+  .icon-back {
     width: 4rem;
-    transition: transform 0.3s ease; 
-    cursor: pointer; 
-}
-
-.icon-back:hover {
-    transform: scale(1.2); 
-    transition: transform 0.3s ease; 
-    cursor: pointer; 
-}
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon-back:hover {
+    transform: scale(1.2);
+  }
+  
+  .icon-back:active {
+    transform: scale(0.9); 
+  }
+  

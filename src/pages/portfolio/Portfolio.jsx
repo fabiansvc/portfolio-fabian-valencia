@@ -2,6 +2,7 @@ import { Loader } from "@react-three/drei";
 import World from "./world/World";
 import { Suspense } from "react";
 import Back from "../../components/back/Back";
+import Language from "./language/Language";
 
 /**
  * Portfolio component renders a Three.js scene for displaying a portfolio.
@@ -11,10 +12,12 @@ import Back from "../../components/back/Back";
  * @returns {JSX.Element}
  */
 export default function Portfolio() {
+
   return (
     <Suspense fallback={<Loader />}>
       <Back />
       <World />
+      <Language />
     </Suspense>
   );
 }
