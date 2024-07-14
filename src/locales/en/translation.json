@@ -11,135 +11,166 @@
   "aboutMe": [
     {
       "subtitle": "Hello!",
-      "content": "Nice to meet you! I'm Fabian Stiven Valencia."
+      "content": "Nice to meet you!, I'm Fabian Stiven Valencia Cordoba",
+      "image": "../../../../public/assets/images/about_me/me.png"
     },
     {
       "subtitle": "Profession",
-      "content": "I am a Systems Engineer, Professor, Developer, 3D Modeler, UX Designer, and Researcher."
+      "content": "I am a Systems Engineer, Professor, Developer, 3D Modeler, UX Designer, and Researcher",
+      "image": "../../../../public/assets/images/about_me/profession.png"      
     },
     {
       "subtitle": "Passion",
-      "content": "I'm passionate about Web 2D/3D, Metaverses, Extended Reality (AR, MR, VR), 2D/3D prototyping, 3D modeling, and game development."
+      "content": "I'm passionate about Web 2D/3D, Metaverses, Extended Reality (AR, MR, VR), 2D/3D prototyping, 3D modeling, and game development",
+      "image": "../../../../public/assets/images/about_me/passion.png"
     },
     {
       "subtitle": "Education",
-      "content": "I have a degree in Systems Engineering from Universidad del Valle (CO), with a laureate thesis."
+      "content": "I have a degree in Systems Engineering from Universidad del Valle (CO), with a laureate thesis",
+      "image": "../../../../public/assets/images/about_me/education.png"
     },
     {
       "subtitle": "Education",
-      "content": "I have a degree in Systems Technology from Universidad del Valle (CO)."
+      "content": "I have a degree in Systems Technology from Universidad del Valle (CO)",
+      "image": "../../../../public/assets/images/about_me/education.png"
     },
     {
       "subtitle": "Experience",
-      "content": "I am currently a Researcher at Universidad del Valle (CO) in the Camaleón Research Group, focusing on Extended Reality (AR, MR, VR), Web 3D, 3D Modeling, and Metaverses."
+      "content": "I am currently a Researcher at Universidad del Valle (CO) in the Camaleón Research Group, focusing on Extended Reality (AR, MR, VR), Web 3D, 3D Modeling, and Metaverses",
+      "image": "../../../../public/assets/images/about_me/researcher.png"
     },
     {
       "subtitle": "Experience",
-      "content": "I was a part-time professor at Universidad del Valle (CO) in the 2024-1 semester, teaching courses such as Integrative Project I, Video Game Development, Fundamentals of Event-Driven Programming, and Web Applications and Wireless Networks."
+      "content": "I was a part-time professor at Universidad del Valle (CO) in the 2024-1 semester, teaching courses such as Integrative Project I, Video Game Development, Fundamentals of Event-Driven Programming, and Web Applications and Wireless Networks",
+      "image": "../../../../public/assets/images/about_me/professor.png"
     },
     {
       "subtitle": "Experience",
-      "content": "I was a Service Technician at Universidad del Valle (CO) to provide technical support for the specialized training diploma 'Specialized training, good practices in the use of Science, Technology, and Innovation and Technological Transfer'."
+      "content": "I was a Service Technician at Universidad del Valle (CO) to provide technical support for the specialized training diploma 'Specialized training, good practices in the use of Science, Technology, and Innovation and Technological Transfer'",
+      "image": "../../../../public/assets/images/about_me/working.png"
     },
     {
       "subtitle": "Experience",
-      "content": "I was a Support Professional in the PMO coordination of the project 'Strengthening business competitiveness through the use of STI as a cross-cutting development tool in the Valle del Cauca department'."
+      "content": "I was a Support Professional in the PMO coordination of the project 'Strengthening business competitiveness through the use of STI as a cross-cutting development tool in the Valle del Cauca department'",
+      "image": "../../../../public/assets/images/about_me/working.png"
     }
   ],
   "contactMe": [
     {
       "subtitle": "Email",
-      "link": "stiven.vcordoba@gmail.com"
+      "link": "mailto:fabian.cordoba@correounivalle.edu.co",
+      "image": "../../../../public/assets/images/contact_me/email.png"
     },
     {
       "subtitle": "Linkedin",
-      "link": "https://www.linkedin.com/in/fabian-valencia-cordoba"
+      "link": "https://www.linkedin.com/in/fabian-valencia-cordoba",
+      "image": "../../../../public/assets/images/contact_me/linkedin.png"
     },
     {
       "subtitle": "Github",
-      "link": "https://github.com/fabiansvc"
+      "link": "https://github.com/fabiansvc",
+      "image": "../../../../public/assets/images/contact_me/github.png"
     }
   ],
   "projects": [
     {
       "subtitle": "EISC Metaverse",
-      "content": "It is a metaverse developed for the School of Systems and Computing Engineering at Universidad del Valle, allowing real-time interaction in a Web 3D environment among students, professors, and the general community.",
-      "link": "https://eisc-metaverse.vercel.app"
+      "content": "It is a metaverse developed for the School of Systems and Computing Engineering at Universidad del Valle, allowing real-time interaction in a Web 3D environment among students, professors, and the general community",
+      "link": "https://eisc-metaverse.vercel.app",
+      "image": "../../../../public/assets/images/projects/eisc_metaverse.jpg"
     },
     {
       "subtitle": "DomoGallery",
-      "content": "It is a first-person Web 3D virtual space, where a dome presents an aerial view of the Universidad del Valle (CO) campus and an art gallery displays self-created poetry works.",
-      "link": "https://domo-gallery.vercel.app"
+      "content": "It is a first-person Web 3D virtual space, where a dome presents an aerial view of the Universidad del Valle (CO) campus and an art gallery displays self-created poetry works",
+      "link": "https://domo-gallery.vercel.app",
+      "image": "../../../../public/assets/images/projects/domogallery.jpg"
     },
     {
-      "subtitle": "Fabian Valencia Portfolio",
-      "content": "This portfolio was developed in Web 3D to showcase my professional profile, projects, skills, and research outcomes.",
-      "link": "https://portfolio-fabian-valencia.vercel.app"
+      "subtitle": "Portfolio Fabian Valencia",
+      "content": "This portfolio was developed in Web 3D to showcase my professional profile, projects, skills, and research outcomes",
+      "link": "https://portfolio-fabian-valencia.vercel.app",
+      "image": "../../../../public/assets/images/projects/portfolio_fabian_valencia.jpg"
     },
     {
       "subtitle": "Art Gallery",
-      "content": "This art gallery is a Web 3D virtual space, resulting from research on how to develop in Three.js and Cannon.js, integrate an avatar, and model with Blender using UV Wrapping and Baking.",
-      "link": "https://art-gallery-sooty.vercel.app"
+      "content": "This art gallery is a Web 3D virtual space, resulting from research on how to develop in Three.js and Cannon.js, integrate an avatar, and model with Blender using UV Wrapping and Baking",
+      "link": "https://art-gallery-sooty.vercel.app",
+      "image": "../../../../public/assets/images/projects/art_gallery.jpg"
     },
     {
       "subtitle": "AR Products",
-      "content": "Prototype to showcase products in augmented reality, developed in Unity using Google's ARCore.",
-      "link": "https://github.com/fabiansvc/ar-products-project"
+      "content": "Prototype to showcase products in augmented reality, developed in Unity using Google's ARCore",
+      "link": "https://github.com/fabiansvc/ar-products-project",
+      "image": "../../../../public/assets/images/projects/ar_products.jpg"
     },
     {
       "subtitle": "AR Machine",
-      "content": "Prototype of an electric machine to help Electronic Engineering students learn how the electromagnetic field works. This project was developed in Unity using Google's ARCore.",
-      "link": "https://github.com/rodriguezfer320/Prototipo-Maquina-Electrica"
+      "content": "Prototype of an electric machine to help Electronic Engineering students learn how the electromagnetic field works. This project was developed in Unity using Google's ARCore",
+      "link": "https://github.com/rodriguezfer320/Prototipo-Maquina-Electrica",
+      "image": "../../../../public/assets/images/projects/ar_machine.jpg"
     }
   ],
   "skills": [
     {
       "subtitle": "Web 3D Application Development",
-      "content": "WebGL, Three.js & React Three Fiber."
+      "content": "WebGL, Three.js & React Three Fiber",
+      "image": "../../../../public/assets/images/skills/web3d.png"
+      
     },
     {
-      "subtitle": "Web 2D Application Development",
-      "content": "HTML, CSS, PHP, JavaScript & TypeScript."
+      "subtitle": "Web Application Development",
+      "content": "HTML, CSS, JavaScript, PHP & TypeScript",
+      "image": "../../../../public/assets/images/skills/web.png"
     },
     {
-      "subtitle": "Frameworks, Libraries, Cloud Services, and Databases",
-      "content": "React, Node.js, Express, Laravel, Firebase, MongoDB, PostgreSQL, MySQL, WebSockets & WebRTC."
+      "subtitle": "Frameworks, Cloud Services, and Databases",
+      "content": "React, Node.js, Express, Laravel, Firebase, MongoDB, PostgreSQL, MySQL, WebSockets & WebRTC",
+      "image": "../../../../public/assets/images/skills/frameworks.png"
     },
     {
       "subtitle": "Desktop Application Development",
-      "content": "Java, JavaFX, FXML & SceneBuilder."
+      "content": "Java, JavaFX, FXML & SceneBuilder",
+      "image": "../../../../public/assets/images/skills/desktop.png"
     },
     {
       "subtitle": "Game Development",
-      "content": "Unity & C#."
+      "content": "Unity & C#",
+      "image": "../../../../public/assets/images/skills/game_development.png"
     },
     {
       "subtitle": "3D Modeling",
-      "content": "Blender"
+      "content": "Blender",
+      "image": "../../../../public/assets/images/skills/blender.png"
     },
     {
       "subtitle": "Texturing and PBR Materials",
-      "content": "Adobe Substance 3D Painter, Materialize."
+      "content": "Adobe Substance 3D Sampler & Materialize",
+      "image": "../../../../public/assets/images/skills/texturing.png"
     },
     {
       "subtitle": "Avatar Creation and Animation",
-      "content": "Ready Player Me & Mixamo"
+      "content": "Ready Player Me & Mixamo",
+      "image": "../../../../public/assets/images/skills/avatars.png"
     },
     {
       "subtitle": "Extended Reality Development (AR, MR, VR)",
-      "content": "ARCore, Unity & WebXR."
+      "content": "ARCore, Unity & WebXR",
+      "image": "../../../../public/assets/images/skills/xr.png"
     },
     {
       "subtitle": "Shader Programming",
-      "content": "GLSL, HLSL & ShaderGraph."
+      "content": "GLSL, CG, HLSL & ShaderGraph",
+      "image": "../../../../public/assets/images/skills/shader.png"
     },
     {
       "subtitle": "User Experience (UX) and User Interface (UI) Design",
-      "content": "Photoshop, Illustrator, Figma, Spline, Adobe XD & Balsamiq."
+      "content": "Photoshop, Illustrator, Figma, Spline, Adobe XD & Balsamiq",
+      "image": "../../../../public/assets/images/skills/ux_ui.png"
     },
     {
       "subtitle": "Version Control, Repositories, and Project Management",
-      "content": "Git, GitHub, Agile methodologies (Scrum, Kanban), Trello, Jira & Miro."
+      "content": "Git, GitHub, Agile methodologies (Scrum, Kanban), Trello, Jira & Miro",
+      "image": "../../../../public/assets/images/skills/git.png"
     }
   ]
 }

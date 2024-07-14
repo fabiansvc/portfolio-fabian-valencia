@@ -17,13 +17,22 @@ export default function Portfolio() {
   const { sign } = useSignStore();
 
   const sectionConfig = {
-    ABOUT_ME: { sectionKey: "aboutMe", fields: ["subtitle", "content"] },
-    SKILLS: { sectionKey: "skills", fields: ["subtitle", "content"] },
+    ABOUT_ME: {
+      sectionKey: "aboutMe",
+      fields: ["subtitle", "content", "image"],
+    },
+    SKILLS: {
+      sectionKey: "skills",
+      fields: ["subtitle", "content", "image"],
+    },
     PROJECTS: {
       sectionKey: "projects",
-      fields: ["subtitle", "content", "link"],
+      fields: ["subtitle", "content", "link", "image"],
     },
-    CONTACT_ME: { sectionKey: "contactMe", fields: ["subtitle", "link"] },
+    CONTACT_ME: {
+      sectionKey: "contactMe",
+      fields: ["subtitle", "link", "image"],
+    },
   };
 
   const config = sectionConfig[sign.name];

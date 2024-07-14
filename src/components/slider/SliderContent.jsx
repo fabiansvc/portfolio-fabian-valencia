@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 /**
  * SliderContent component
- * 
+ *
  * @component
  * @param {Object} props - The component props.
  * @param {string} [props.subtitle=""] - The subtitle to display.
@@ -12,14 +12,26 @@ import { Link } from "react-router-dom";
  * @param {string} [props.link=""] - The link URL.
  * @returns {JSX.Element} The rendered component.
  */
-export default function SliderContent({ subtitle = "", content = "", link = "" }) {
+export default function SliderContent({
+  subtitle = "",
+  content = "",
+  link = "",
+  image = "",
+}) {
+  console.log(image);
   return (
     <div className="slider-content">
       <h2 className="slider-sign-subtitle">{subtitle}</h2>
       <p className="slider-sign-content">{content}</p>
-      <Link to={link} className="slider-sign-link">
-        {link}
-      </Link>
+         {link != "" && (
+        <Link to={link} className="slider-sign-link">
+          {link.split("mailto:")}
+        </Link>
+      )}
+      <div className="slider-sign-image">
+        <img onClick={() => window.open(link, "_blank")} src={image} />
+      </div>
+   
     </div>
   );
 }
