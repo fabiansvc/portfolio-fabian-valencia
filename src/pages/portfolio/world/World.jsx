@@ -8,11 +8,6 @@ import { Canvas } from "@react-three/fiber";
 import Staging from "./staging/Staging";
 import Controls from "./controls/Controls";
 import Welcome from "./text/Welcome";
-import AboutMe from "../about_me/AboutMe";
-import useSignStore from "../../../stores/store-sign-selected";
-import Skills from "../skills/Skills";
-import Projects from "../projects/Projects";
-import ContactMe from "../contact_me/ContactMe";
 
 /**
  * World component renders a 3D scene using Three.js and React.
@@ -22,8 +17,6 @@ import ContactMe from "../contact_me/ContactMe";
  * @returns {JSX.Element}
  */
 export default function World() {
-  const { sign } = useSignStore();
-
   return (
     <>
       <Canvas shadows camera={{ position: [0, 2, 4] }}>
@@ -31,16 +24,12 @@ export default function World() {
         <Fences />
         <Tree />
         <Sign />
-        <Welcome position-y={3.25}/>
+        <Welcome position-y={3.25} />
         <Dog position={[0.9, 0, 0.5]} rotation-y={-Math.PI * 0.1} scale={0.8} />
         <Camaleon position={[0.08, 2.5, -0.08]} rotation-y={Math.PI * 0.25} />
         <Staging />
         <Controls />
       </Canvas>
-      {sign.name === "ABOUT_ME" && <AboutMe />}
-      {sign.name === "SKILLS" && <Skills />}
-      {sign.name === "PROJECTS" && <Projects />}
-      {sign.name === "CONTACT_ME" && <ContactMe />}
     </>
   );
 }
