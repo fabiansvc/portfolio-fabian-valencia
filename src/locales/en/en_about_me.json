@@ -3,37 +3,37 @@
   "aboutMe": [
     {
       "subtitle": "Hello!",
-      "content": "Nice to meet you!, I'm Fabian Stiven Valencia Cordoba",
+      "content": "Nice to meet you!, I am Fabian Stiven Valencia Cordoba",
       "image": "me.png"
     },
     {
       "subtitle": "Profession",
-      "content": "I am a Systems Engineer, Professor, Developer, 3D Modeler, UX/UI Designer, and Researcher",
+      "content": "I am a Systems Engineer, Professor, Researcher, 3D Modeler, UX/UI Designer, Video Game Developer, Metaverses, Extended Reality and 3D Web",
       "image": "profession.png"
     },
     {
       "subtitle": "Passion",
-      "content": "I'm passionate about Web 2D/3D, Metaverses, Extended Reality (AR, MR, VR), 2D/3D prototyping, 3D modeling, and game development",
+      "content": "I am passionate about developing immersive applications",
       "image": "passion.png"
     },
     {
       "subtitle": "Education",
-      "content": "I have a degree in Systems Engineering from Universidad del Valle (CO), with a laureate thesis",
+      "content": "I have a degree in Systems Engineering at Universidad del Valle (CO), with mention of laureate thesis",
       "image": "education.png"
     },
     {
       "subtitle": "Education",
-      "content": "I have a degree in Informations Systems Technology from Universidad del Valle (CO) Sede Yumbo",
+      "content": "I have a degree in Information Systems Technology at Universidad del Valle (CO) Sede Yumbo",
       "image": "education.png"
     },
     {
       "subtitle": "Experience",
-      "content": "I am currently a Researcher at Universidad del Valle (CO) in the Camaleón Research Group, focusing on Extended Reality (AR, MR, VR), Web 3D, 3D Modeling, and Metaverses",
+      "content": "I am currently a Researcher at Universidad del Valle (CO) in the Camaleón Research Group, focusing on Extended Reality (AR, MR, VR), Web 3D, 3D Modeling, UX/UI, and Metaverses",
       "image": "researcher.png"
     },
     {
       "subtitle": "Experience",
-      "content": "I was a part-time professor at Universidad del Valle (CO) in the 2024-1 semester, teaching courses such as Integrative Project I, Video Game Development, Fundamentals of Event-Driven Programming, and Web Applications and Wireless Networks",
+      "content": "I was professor at Universidad del Valle (CO) in the 2024-1 semester, teaching courses such as Integrative Project I, Video Game Development, Fundamentals of Event-Driven Programming, and Web Applications and Wireless Networks",
       "image": "professor.png"
     },
     {

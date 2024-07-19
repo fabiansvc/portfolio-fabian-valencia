@@ -22,7 +22,7 @@ export default function SliderContent({
       <h2 className="slider-sign-subtitle">{subtitle}</h2>
       <p className="slider-sign-content">{content}</p>
       {link && (
-        <Link to={link} className="slider-sign-link">
+        <Link to={link} className="slider-sign-link" target="_blank" rel="noopener noreferrer">
           {link.split("mailto:")}
         </Link>
       )}
