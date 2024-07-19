@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
  * @returns {JSX.Element}
  */
 export default function Welcome(props) {
-  const { t } = useTranslation();
+  const { t } = useTranslation("general");
 
   const text = useMemo(() => `${t("welcome")}`, [t]);
 

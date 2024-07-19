@@ -17,7 +17,7 @@ import { useTranslation } from "react-i18next";
 export default function Sign(props) {
   const { nodes, materials } = useGLTF("/assets/models_3d/sign.glb");
   const { setSign } = useSignStore();
-  const { t } = useTranslation();
+  const { t } = useTranslation("general");
 
   /**
    * Handles mouse pointer enter event.
@@ -102,10 +102,26 @@ export default function Sign(props) {
         geometry={nodes.Sign.geometry}
         material={materials.WoodMaterial}
       />
-      <SignText text={t("signTitle.0.aboutMe")} position={[0.035, 2.23, 0.05]} rotation={[0,  5 * (Math.PI / 180), -8 * (Math.PI / 180)]} />
-      <SignText text={t("signTitle.0.projects")} position={[0.025, 1.86, 0.05]} rotation={[0,  -5 * (Math.PI / 180), 0]} />
-      <SignText text={t("signTitle.0.skills")} position={[0.05, 1.425, 0.05]} rotation={[0,  -5 * (Math.PI / 180),  7 * (Math.PI / 180)]} />
-      <SignText text={t("signTitle.0.contactMe")} position={[0.04, 0.955, 0.05]} rotation={[0,  5 * (Math.PI / 180), 0]}/>
+      <SignText
+        text={t("signTitle.0.aboutMe")}
+        position={[0.035, 2.23, 0.05]}
+        rotation={[0, 5 * (Math.PI / 180), -8 * (Math.PI / 180)]}
+      />
+      <SignText
+        text={t("signTitle.0.projects")}
+        position={[0.025, 1.86, 0.05]}
+        rotation={[0, -5 * (Math.PI / 180), 0]}
+      />
+      <SignText
+        text={t("signTitle.0.skills")}
+        position={[0.05, 1.425, 0.05]}
+        rotation={[0, -5 * (Math.PI / 180), 7 * (Math.PI / 180)]}
+      />
+      <SignText
+        text={t("signTitle.0.contactMe")}
+        position={[0.04, 0.955, 0.05]}
+        rotation={[0, 5 * (Math.PI / 180), 0]}
+      />
     </group>
   );
 }
