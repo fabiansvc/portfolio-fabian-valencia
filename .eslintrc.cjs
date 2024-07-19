@@ -23,7 +23,7 @@ module.exports = {
     {
       files: ['*.js', '*.jsx'],
       rules: {
-        'react/no-unknown-property': ['off', { ignore: ['JSX'] }],  // Incluir la configuración específica
+        'react/no-unknown-property': ['off', { ignore: ['JSX'] }], 
       },
     },
   ],

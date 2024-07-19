@@ -1,0 +1,11 @@
+{
+  "welcome": "  Welcome",
+  "signTitle": [
+    {
+      "aboutMe": "About me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contactMe": "Contact me"
+    }
+  ]
+}

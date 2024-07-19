@@ -1,0 +1,47 @@
+{
+  "imageBasePath": "/assets/images/projects/",
+  "projects": [
+    {
+      "subtitle": "EISC Metaverse",
+      "content": "It is a metaverse developed for the School of Systems and Computing Engineering at Universidad del Valle, allowing real-time interaction in a Web 3D environment among students, professors, and the general community",
+      "link": "https://eisc-metaverse.vercel.app",
+      "image": "eisc_metaverse.jpg"
+    },
+    {
+      "subtitle": "DomoGallery",
+      "content": "It is a first-person Web 3D virtual space, where a dome presents an aerial view of the Universidad del Valle (CO) campus and an art gallery displays self-created poetry works",
+      "link": "https://domo-gallery.vercel.app",
+      "image": "domogallery.jpg"
+    },
+    {
+      "subtitle": "Portfolio Fabian Valencia",
+      "content": "This portfolio was developed in Web 3D to showcase my professional profile, projects, skills, and research outcomes",
+      "link": "https://portfolio-fabian-valencia.vercel.app",
+      "image": "portfolio_fabian_valencia.jpg"
+    },
+    {
+      "subtitle": "Art Gallery",
+      "content": "This art gallery is a Web 3D virtual space, resulting from research on how to develop in Three.js and Cannon.js, integrate an avatar, and model with Blender using UV Wrapping and Baking",
+      "link": "https://art-gallery-sooty.vercel.app",
+      "image": "art_gallery.jpg"
+    },
+    {
+      "subtitle": "ARProducts",
+      "content": "Application to showcase products in augmented reality, developed in Unity using Google's ARCore",
+      "link": "https://github.com/fabiansvc/ar-products-project",
+      "image": "ar_products.jpg"
+    },
+    {
+      "subtitle": "ARMachine",
+      "content": "Application of an electric machine to help Electronic Engineering students learn how the electromagnetic field works. This project was developed in Unity using Google's ARCore",
+      "link": "https://github.com/rodriguezfer320/Prototipo-Maquina-Electrica",
+      "image": "ar_machine.jpg"
+    },
+    {
+      "subtitle": "Fireboy & Watergirl",
+      "content": "This game is based on the popular game Fireboy and Watergirl, which was developed in WebGL",
+      "link": "https://github.com/rodriguezfer320/Proyecto-Final-CG",
+      "image": "fireboy_watergirl.jpg"
+    }
+  ]
+}

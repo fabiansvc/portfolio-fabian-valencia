@@ -4,7 +4,7 @@ import SliderSign from "../../../components/slider/SliderSign";
 import { useTranslation } from "react-i18next";
 
 /**
- * GenericSlider component
+ * Section component
  *
  * This component uses the SliderSign component to display various types of information.
  *
@@ -14,27 +14,26 @@ import { useTranslation } from "react-i18next";
  * @returns {JSX.Element} The rendered component.
  */
 export default function Section({ sectionKey, fields }) {
-  const { t } = useTranslation();
+  const { t } = useTranslation(sectionKey);
 
   const datas = useMemo(() => {
-    const sectionLength = t(sectionKey, { returnObjects: true }).length;
+    const sectionData = t(sectionKey, { returnObjects: true });
+    const imageBasePath = t(`imageBasePath`, { ns: sectionKey });
 
-    return Array.from({ length: sectionLength }, (_, index) => {
+    return sectionData.map((item, index) => {
       const data = {};
-      fields.forEach(field => {
-        data[field] = t(`${sectionKey}.${index}.${field}`);
+      fields.forEach((field) => {
+        if (field === "image") {
+          data[field] = [`${item[field]}`][0]
+            .split(",")
+            .map((img) => imageBasePath + img);
+        } else {
+          data[field] = t(`${sectionKey}.${index}.${field}`);
+        }
       });
       return data;
     });
   }, [t, sectionKey, fields]);
 
-  const title = t(`signTitle.0.${sectionKey}`);
-
-  return (
-    <SliderSign
-      title={title}
-      datas={datas}
-    />
-  );
+  return <SliderSign datas={datas} />;
 }
-

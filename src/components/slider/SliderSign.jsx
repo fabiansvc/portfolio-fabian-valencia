@@ -8,12 +8,11 @@ import { Vector3 } from "three";
 
 /**
  * SliderSign component
- * 
+ *
  * This component represents a slider with dynamic content.
- * @component 
- * 
+ * @component
+ *
  * @param {Object} props - The component props.
- * @param {string} props.title - The title of the slider.
  * @param {Array<Object>} props.datas - An array of objects containing the data for each slide.
  * @param {string} props.datas.subtitle - The subtitle of the slide.
  * @param {string} props.datas.content - The content of the slide.
@@ -21,7 +20,8 @@ import { Vector3 } from "three";
  * @returns {JSX.Element} The rendered component.
  */
 
-export default function SliderSign({ title, datas }) {
+export default function SliderSign({ datas }) {
+  console.log(datas);
   const { setSign } = useSignStore();
 
   const settings = useMemo(
@@ -48,7 +48,6 @@ export default function SliderSign({ title, datas }) {
       >
         X
       </button>
-      {/* <h1 className="slider-sign-title"> {title} </h1> */}
       <Slider {...settings}>
         {datas.map((data, index) => (
           <SliderContent
