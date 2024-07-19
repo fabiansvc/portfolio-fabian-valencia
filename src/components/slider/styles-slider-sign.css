@@ -36,22 +36,25 @@
   border-radius: inherit;
 }
 
-.slider-sign-title {
-  color: rgb(3, 255, 3);
-  font-size: xx-large;
-  font-weight: 900;
-  text-align: center;
+.slider-sign-subtitle,
+.slider-sign-content,
+.slider-sign-link {
+  color: rgb(255, 255, 255);
 }
 
 .slider-sign-subtitle {
-  color: rgb(255, 212, 147);
   font-size: xx-large;
   font-weight: 600;
+  color: rgb(255, 212, 147);
 }
 
 .slider-sign-content {
-  color: rgb(255, 255, 255);
   font-size: x-large;
+}
+
+.slider-sign-link {
+  font-size: x-large;
+  word-wrap: break-word;
 }
 
 .slider-content {
@@ -61,7 +64,7 @@
 }
 
 .slick-dots {
-  bottom: 32px !important;
+  bottom: -32px !important;
 }
 
 .slick-dots li button:before {
@@ -108,52 +111,50 @@
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.slider-sign-link {
-  color: rgb(255, 255, 255);
-  font-size: x-large;
-  word-wrap: break-word;
-}
-
 @media (max-width: 1280px) {
   .container-slider-sign {
     width: 60%;
-    height: 50%;
+    height: 60%;
+  }
+
+  .slider-sign-subtitle {
+    font-size: x-large;
+  }
+
+  .slider-sign-content {
+    font-size: larger;
+  }
+
+  .slider-sign-link {
+    font-size: larger;
   }
 
   .slider-sign-image img {
-    height: 10vh;
+    height: 14vh;
   }
 
-  .slider-content {
-    height: 50vh;
+  .slick-dots {
+    bottom: 0px !important;
   }
 }
 
 @media (max-width: 768px) {
   .container-slider-sign {
     width: 60%;
-    height: 50%;
-  }
-
-  .slider-sign-title {
-    font-size: larger;
+    height: 60%;
   }
 
   .slider-sign-subtitle {
-    font-size: large;
+    font-size: medium;
   }
 
-  .slider-sign-content {
+  .slider-sign-content,
+  .slider-sign-link {
     font-size: medium;
   }
 
   .slider-content {
     padding: 0rem;
-    height: 50vh;
-  }
-
-  .slider-sign-link {
-    font-size: small;
   }
 
   .slider-sign-image {
@@ -161,7 +162,7 @@
   }
 
   .slider-sign-image img {
-    height: 8vh;
+    height: 12vh;
   }
 
   .slick-dots {
@@ -175,15 +176,9 @@
     height: 50%;
   }
 
-  .slider-sign-title {
-    font-size: medium;
-  }
-
-  .slider-sign-subtitle {
-    font-size: medium;
-  }
-
-  .slider-sign-content {
+  .slider-sign-subtitle,
+  .slider-sign-content,
+  .slider-sign-link {
     font-size: small;
   }
 
@@ -192,15 +187,11 @@
     height: 50vh;
   }
 
-  .slider-sign-link {
-    font-size: small;
+  .slider-sign-image {
+    gap: 6px;
   }
 
   .slider-sign-image img {
-    height: 8vh;
-  }
-
-  .slider-sign-image {
-    gap: 6px;
+    height: 10vh;
   }
 }

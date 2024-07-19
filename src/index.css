@@ -14,3 +14,7 @@ body,
 .canvas {
   touch-action: none;
 }
+
+button:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
