@@ -1,25 +1,17 @@
 .language-buttons {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   display: flex;
-  gap: 10px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .language-buttons button {
-  background-color: #f0f0f0;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
 }
 
 .language-buttons button {
   background-size: cover;
-  background-repeat: no-repeat;
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
