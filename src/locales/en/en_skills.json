@@ -65,12 +65,12 @@
     },
     {
       "subtitle": "Shader Programming",
-      "content": "GLSL, CG, HLSL & ShaderGraph",
+      "content": "GLSL, CG & HLSL",
       "image": ["shaders.png"]
     },
     {
       "subtitle": "Tools Design",
-      "content": "Photoshop, Illustrator, & Gimp",
+      "content": "Photoshop, Illustrator & Gimp",
       "image": ["photoshop.png", "illustrator.png", "gimp.png"]
     },
     {
