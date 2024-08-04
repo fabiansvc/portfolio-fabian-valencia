@@ -12,12 +12,12 @@ export default function Staging() {
   return (
     <>
       {/* Ambient light with reduced intensity */}
-      <ambientLight intensity={0.5} />
+      <ambientLight intensity={1} />
 
       {/* Main directional light with shadows */}
       <directionalLight
         castShadow
-        position={[-10, 5, -20]}
+        position={[-5.5, 5, -20]}
         intensity={1}
         shadow-mapSize={[4096, 4096]}
         shadow-camera-far={50}
@@ -33,7 +33,7 @@ export default function Staging() {
 
       {/* Sky component with customizable parameters */}
       <Sky
-        sunPosition={[-0.5, 0, -1]}
+        sunPosition={[-0.3, 0, -1]}
         inclination={0.2}
         azimuth={180}
         mieCoefficient={0.005}
