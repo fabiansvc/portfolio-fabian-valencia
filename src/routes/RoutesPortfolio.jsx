@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Portfolio from "../pages/portfolio/Portfolio";
 import PageNotFound from "../pages/page_not_found/PageNotFound";
+import { BrowserRouter, Route, Routes } from "react-router";
 
 /**
  * RoutesPortfolio component defines the routing configuration for the portfolio application.

@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import './i18n'; // Importa la configuración de i18n
 
 /**
  * Renders the root React component into the DOM.
