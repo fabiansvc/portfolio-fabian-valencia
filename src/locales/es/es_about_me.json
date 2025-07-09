@@ -7,38 +7,28 @@
       "image": "me.png"
     },
     {
-      "subtitle": "Profesión",
-      "content": "Soy Ingeniero de Sistemas, Profesor, Desarrollador, Modelador 3D, Diseñador UX e Investigador",
+      "subtitle": "Sobre mi",
+      "content": "Soy Profesor, Estudiante de Doctorado, Ingeniero de Sistemas, Técnologo en Sistemas de Información, Modelador 3D, Diseñador UX/UI e Investigador",
       "image": "profession.png"
     },
     {
       "subtitle": "Pasión",
-      "content": "Me apasiona la Web 3D, los Metaversos, la Realidad Extendida, el prototipado 3D, el modelado 3D y el desarrollo de videojuegos",
+      "content": "Me apasiona la Web 3D, la Experiencia de Usuario y Usabilidad, la Accesibilidad, la Realidad Extendida, el Modelado 3D, Metaversos y el Desarrollo de Videojuegos",
       "image": "passion.png"
     },
     {
-      "subtitle": "Educación",
-      "content": "Tengo un grado en Ingeniería de Sistemas de la Universidad del Valle (CO), con mención de tesis laureada",
-      "image": "education.png"
-    },
-    {
-      "subtitle": "Educación",
-      "content": "Tengo un grado en Tecnología en Sistemas de Información de la Universidad del Valle (CO) Sede Yumbo",
-      "image": "education.png"
-    },
-    {
       "subtitle": "Experiencia",
-      "content": "Actualmente soy Investigador en la Universidad del Valle (CO) del Grupo de Investigación Camaleón en temas relacionados con Realidad Extendida (AR, MR, VR), Web 3D, UX/UI, Modelado 3D y Metaversos",
-      "image": "researcher.png"
-    },
-    {
-      "subtitle": "Experiencia",
-      "content": "Fui Profesor en la Universidad del Valle (CO) en el semestre 2024-1 de los cursos: Proyecto Integrador I, Desarrollo de Videojuegos, Fundamentos de Programación Orientada a Eventos y Aplicaciones Web y Redes Inalámbricas",
+      "content": "Desde el 2024 soy Profesor Hora Cátedra de los programas de Ingeniería de Sistemas y Tecnología en Desarrollo de Software en la Universidad del Valle",
       "image": "professor.png"
     },
     {
       "subtitle": "Experiencia",
-      "content": "Fui Técnico de Servicio en la Universidad del Valle (CO) para apoyar técnicamente el Diplomado 'Entrenamientos especializados, buenas prácticas en el uso de Ciencia, Tecnología e Innovación y Transferencia Tecnológica'",
+      "content": "Soy profesor del Grupo de Investigación Camaleón en temas relacionados con la Web 3D, UX/UI y Modelado 3D",
+      "image": "researcher.png"
+    },
+    {
+      "subtitle": "Experiencia",
+      "content": "Fui Técnico de Servicio en la Universidad del Valle para apoyar técnicamente el Diplomado 'Entrenamientos especializados, buenas prácticas en el uso de Ciencia, Tecnología e Innovación y Transferencia Tecnológica'",
       "image": "working.png"
     },
     {
