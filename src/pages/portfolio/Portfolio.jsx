@@ -1,7 +1,6 @@
 import { Loader } from "@react-three/drei";
 import World from "./world/World";
 import { Suspense } from "react";
-import Back from "../../components/back/Back";
 import Language from "./language/Language";
 import useSignStore from "../../stores/store-sign-selected";
 import Section from "./section/Section";
@@ -39,7 +38,6 @@ export default function Portfolio() {
 
   return (
     <Suspense fallback={<Loader />}>
-      <Back />
       <World />
       <Language />
       {config && (

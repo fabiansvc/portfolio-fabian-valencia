@@ -21,11 +21,6 @@ export default function SliderContent({
     <div className="slider-content">
       <h2 className="slider-sign-subtitle">{subtitle}</h2>
       <p className="slider-sign-content">{content}</p>
-      {link && (
-        <Link to={link} className="slider-sign-link" target="_blank" rel="noopener noreferrer">
-          {link.split("mailto:")}
-        </Link>
-      )}
       <div className="slider-sign-image">
         {image.map((img, index) => (
           <img
@@ -35,6 +30,11 @@ export default function SliderContent({
           />
         ))}
       </div>
+      {link && (
+        <Link to={link} className="slider-sign-link" target="_blank" rel="noopener noreferrer">
+          {link.split("mailto:")}
+        </Link>
+      )}
     </div>
   );
 }

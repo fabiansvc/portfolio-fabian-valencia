@@ -12,9 +12,7 @@
       "image": [
         "html.png",
         "css.png",
-        "javascript.png",
-        "php.png",
-        "typescript.png"
+        "javascript.png"
       ]
     },
     {
@@ -36,7 +34,7 @@
     {
       "subtitle": "Cloud Services and Databases",
       "content": "Firebase, MongoDB, PostgreSQL & MySQL",
-      "image": ["firebase.png", "mongodb.png", "postgresql.png", "mysql.png"]
+      "image": ["firebase.png", "mongodb.png", "postgresql.png"]
     },
     {
       "subtitle": "Game Development",
@@ -76,12 +74,12 @@
     {
       "subtitle": "UX/UI",
       "content": "Figma, Spline, Adobe XD & Balsamiq",
-      "image": ["figma.png", "spline.png", "adobexd.png", "balsamiq.png"]
+      "image": ["figma.png", "spline.png", "adobexd.png"]
     },
     {
       "subtitle": "Version Control, Repositories, and Project Management",
       "content": "Git, GitHub, Trello, Jira & Miro",
-      "image": ["git.png", "github.png", "trello.png", "jira.png", "miro.png"]
+      "image": ["git.png", "github.png", "jira.png"]
     }
   ]
 }

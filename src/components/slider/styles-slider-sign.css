@@ -106,7 +106,7 @@
 }
 
 .slider-sign-image img {
-  height: 20vh;
+  height: 25vh;
   object-fit: contain;
   transition: box-shadow 0.3s ease-in-out;
 }
